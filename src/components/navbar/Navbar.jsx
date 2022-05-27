@@ -1,9 +1,11 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import DehazeIcon from "@mui/icons-material/Dehaze";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useAuth } from "../../context/auth-context";
+import {
+  DehazeIcon,
+  SearchOutlinedIcon,
+  AccountCircleIcon,
+} from "../../icons/icons";
 
 const Navbar = () => {
   const { auth, setAuth } = useAuth();

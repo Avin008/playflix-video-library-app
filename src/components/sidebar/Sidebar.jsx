@@ -1,10 +1,12 @@
 import "./sidebar.css";
 import { NavLink } from "react-router-dom";
-import HomeIcon from "@mui/icons-material/Home";
-import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import HistoryIcon from "@mui/icons-material/History";
-import WatchLaterIcon from "@mui/icons-material/WatchLater";
+import {
+  HomeIcon,
+  VideoLibraryIcon,
+  FavoriteIcon,
+  HistoryIcon,
+  WatchLaterIcon,
+} from "../../icons/icons";
 
 const Sidebar = () => {
   return (
