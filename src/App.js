@@ -1,7 +1,15 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar, Sidebar } from "./components";
-import { Login, Signup, Home, History, Liked, WatchLater } from "./pages";
+import {
+  Login,
+  Signup,
+  Home,
+  History,
+  Liked,
+  WatchLater,
+  SingleVideoPage,
+} from "./pages";
 
 function App() {
   return (
@@ -14,6 +22,7 @@ function App() {
           <Route path="history" element={<History />} />
           <Route path="liked" element={<Liked />} />
           <Route path="watch-later" element={<WatchLater />} />
+          <Route path="watch/:videoId" element={<SingleVideoPage />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
         </Routes>

@@ -10,6 +10,7 @@ import PlaylistModal from "../playlist-modal/PlaylistModal";
 import { useHistory } from "../../context/history-context";
 import { useLikedContext } from "../../context/like-context";
 import { useWatchLater } from "../../context/watch-later-context";
+import { Link } from "react-router-dom";
 
 const VideoCard = ({ videos }) => {
   const [toggle, setToggle] = useState(false);
@@ -26,7 +27,9 @@ const VideoCard = ({ videos }) => {
     <>
       <div className="thumbnail-card">
         <div className="card-head" onClick={() => addToHistory(videos)}>
-          <img className="thumbnail" src={videos.thumbnail} alt="not found" />
+          <Link to={`/watch/${videos._id}`}>
+            <img className="thumbnail" src={videos.thumbnail} alt="not found" />
+          </Link>
           {toggle && (
             <ul className="card-actions">
               <li onClick={() => setTogglePlaylistModal((prev) => !prev)}>

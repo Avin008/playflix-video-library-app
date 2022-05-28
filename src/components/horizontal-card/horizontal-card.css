@@ -1,0 +1,29 @@
+.horizontal-card {
+  width: 320px;
+  height: 100px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.horizontal-card .card-head {
+  min-width: 50%;
+  height: 100%;
+}
+
+.horizontal-card .card-head img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.horizontal-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.6rem;
+}
+
+.horizontal-card small {
+  color: #aaa;
+}
