@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar, Sidebar } from "./components";
-import { Login, Signup, Home } from "./pages";
+import { Login, Signup, Home, History, Liked } from "./pages";
 
 function App() {
   return (
@@ -11,6 +11,8 @@ function App() {
         <Sidebar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="history" element={<History />} />
+          <Route path="liked" element={<Liked />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
         </Routes>

@@ -7,10 +7,14 @@ import {
 } from "../../icons/icons";
 import { useState } from "react";
 import PlaylistModal from "../playlist-modal/PlaylistModal";
+import { useHistory } from "../../context/history-context";
+import { useLikedContext } from "../../context/like-context";
 
 const VideoCard = ({ videos }) => {
   const [toggle, setToggle] = useState(false);
   const [togglePlaylistModal, setTogglePlaylistModal] = useState(false);
+  const { addToHistory, history, removeFromHistory } = useHistory();
+  const { likes, addToLiked, removeFromLiked } = useLikedContext();
 
   function togglePlaylist() {
     setTogglePlaylistModal((prev) => !prev);
@@ -19,7 +23,7 @@ const VideoCard = ({ videos }) => {
   return (
     <>
       <div className="thumbnail-card">
-        <div className="card-head">
+        <div className="card-head" onClick={() => addToHistory(videos)}>
           <img className="thumbnail" src={videos.thumbnail} alt="not found" />
           {toggle && (
             <ul className="card-actions">
@@ -33,12 +37,20 @@ const VideoCard = ({ videos }) => {
               <li>
                 <WatchLaterIcon sx={{ fontSize: "1rem" }} /> WATCH LATER
               </li>
-              <li>
-                <FavoriteIcon sx={{ fontSize: "1rem" }} /> REMOVE
-              </li>
-              <li>
-                <FavoriteIcon sx={{ fontSize: "1rem" }} /> LIKE
-              </li>
+              {likes.find((x) => x._id === videos._id) ? (
+                <li onClick={() => removeFromLiked(videos._id)}>
+                  <FavoriteIcon sx={{ fontSize: "1rem" }} /> REMOVE
+                </li>
+              ) : (
+                <li onClick={() => addToLiked(videos)}>
+                  <FavoriteIcon sx={{ fontSize: "1rem" }} /> LIKE
+                </li>
+              )}
+              {history.find((x) => x._id === videos._id) && (
+                <li onClick={() => removeFromHistory(videos._id)}>
+                  <FavoriteIcon sx={{ fontSize: "1rem" }} /> Remove From History
+                </li>
+              )}
             </ul>
           )}
         </div>

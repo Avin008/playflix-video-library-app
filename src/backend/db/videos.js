@@ -7,7 +7,7 @@ import { v4 } from "uuid";
 
 export const videos = [
   {
-    id: v4(),
+    _id: v4(),
     title: "First React App: Introduction to ReactJS library",
     thumbnail:
       "https://i.ytimg.com/vi/KUJsaM-hAjs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAkHPqNsxWDJHppWkw5s6dtxh4SSQ",
@@ -17,7 +17,7 @@ export const videos = [
     videoLink: "https://www.youtube.com/embed/6PfYFeJSGjo",
   },
   {
-    id: v4(),
+    _id: v4(),
     title: "How OLA electric revoluation started",
     thumbnail:
       "https://i.ytimg.com/vi/X-wNHCvnYnk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnN2NOEE_VIuimR5SdJjPUZHWDNQ",
@@ -28,7 +28,7 @@ export const videos = [
     videoLink: "https://www.youtube.com/embed/X-wNHCvnYnk",
   },
   {
-    id: v4(),
+    _id: v4(),
     title: "Why you should leave your faang company",
     thumbnail:
       "https://i.ytimg.com/vi/sM2reZib2RY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB9VzE4rNqXT6rXtHcjhb1e4hHpqA",
@@ -38,7 +38,7 @@ export const videos = [
     videoLink: "https://www.youtube.com/embed/sM2reZib2RY",
   },
   {
-    id: v4(),
+    _id: v4(),
     title: "LIC IPO ? Looks cheap ! Will I invest?",
     thumbnail:
       "https://i.ytimg.com/vi/DqCj6hooUwU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEOhb4zxWb6V4CmNk6CLYI24juWA",
@@ -48,7 +48,7 @@ export const videos = [
     videoLink: "https://www.youtube.com/embed/EDIpoyr5XU4",
   },
   {
-    id: v4(),
+    _id: v4(),
     title: "Google I/O ‘22 in Under 12 Minutes",
     thumbnail:
       "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
