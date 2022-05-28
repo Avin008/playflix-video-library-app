@@ -9,12 +9,14 @@ import { useState } from "react";
 import PlaylistModal from "../playlist-modal/PlaylistModal";
 import { useHistory } from "../../context/history-context";
 import { useLikedContext } from "../../context/like-context";
+import { useWatchLater } from "../../context/watch-later-context";
 
 const VideoCard = ({ videos }) => {
   const [toggle, setToggle] = useState(false);
   const [togglePlaylistModal, setTogglePlaylistModal] = useState(false);
   const { addToHistory, history, removeFromHistory } = useHistory();
   const { likes, addToLiked, removeFromLiked } = useLikedContext();
+  const { watchLater, addToWatchLater, removeFromWatchLater } = useWatchLater();
 
   function togglePlaylist() {
     setTogglePlaylistModal((prev) => !prev);
@@ -30,13 +32,16 @@ const VideoCard = ({ videos }) => {
               <li onClick={() => setTogglePlaylistModal((prev) => !prev)}>
                 <PlaylistAddIcon sx={{ fontSize: "1rem" }} /> ADD TO PLAYLIST
               </li>
-              <li>
-                <WatchLaterIcon sx={{ fontSize: "1rem" }} /> REMOVE FROM WATCH
-                LATER
-              </li>
-              <li>
-                <WatchLaterIcon sx={{ fontSize: "1rem" }} /> WATCH LATER
-              </li>
+              {watchLater.find((x) => x._id === videos._id) ? (
+                <li onClick={() => removeFromWatchLater(videos._id)}>
+                  <WatchLaterIcon sx={{ fontSize: "1rem" }} /> REMOVE FROM WATCH
+                  LATER
+                </li>
+              ) : (
+                <li onClick={() => addToWatchLater(videos)}>
+                  <WatchLaterIcon sx={{ fontSize: "1rem" }} /> WATCH LATER
+                </li>
+              )}
               {likes.find((x) => x._id === videos._id) ? (
                 <li onClick={() => removeFromLiked(videos._id)}>
                   <FavoriteIcon sx={{ fontSize: "1rem" }} /> REMOVE
