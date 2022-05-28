@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar, Sidebar } from "./components";
-import { Login } from "./pages";
+import { Login, Signup, Home } from "./pages";
 
 function App() {
   return (
@@ -10,8 +10,9 @@ function App() {
       <div className="grid-container">
         <Sidebar />
         <Routes>
-          <Route path="/" element={<h1>HOMEPAGE</h1>} />
+          <Route path="/" element={<Home />} />
           <Route path="login" element={<Login />} />
+          <Route path="signup" element={<Signup />} />
         </Routes>
       </div>
     </div>

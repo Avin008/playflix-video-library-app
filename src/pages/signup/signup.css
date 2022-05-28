@@ -1,0 +1,76 @@
+:root {
+  --signup-form-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --signup-form-bg: #202020;
+  --signup-form-btn-primary-bg: #383838;
+  --signup-form-btn-color: white;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saiyan-form {
+  box-shadow: var(--signup-form-shadow);
+  width: 25rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--signup-form-bg);
+  color: white;
+}
+
+.saiyan-form .input-group {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.saiyan-form .checkbox {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.saiyan-form .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.saiyan-form .btn {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.3rem;
+}
+
+.saiyan-form .input {
+  padding: 0.5rem;
+}
+
+.saiyan-form .input {
+  margin-bottom: 0.5rem;
+}
+
+.saiyan-form .label {
+  margin-bottom: 0.3rem;
+}
+
+.saiyan-form .btn--primary {
+  background-color: var(--signup-form-btn-primary-bg);
+  color: var(--signup-form-btn-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.saiyan-form .btn--secondary {
+  background-color: var(--color-white);
+  color: var(--signup-form-btn-primary-bg);
+  font-weight: 600;
+  text-decoration: underline;
+}
