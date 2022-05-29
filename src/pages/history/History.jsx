@@ -1,4 +1,4 @@
-import VideoCard from "../../components/video-card/VideoCard";
+import { HistoryCard } from "../../components";
 import { useHistory } from "../../context/history-context";
 import "./history.css";
 
@@ -8,7 +8,7 @@ const History = () => {
     <>
       <div className="main-container">
         {history.map((x) => (
-          <VideoCard videos={x} />
+          <HistoryCard videos={x} />
         ))}
       </div>
     </>

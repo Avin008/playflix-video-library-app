@@ -56,9 +56,24 @@ const HistoryContextProvider = ({ children }) => {
     }
   };
 
+  const removeHistoryAll = async () => {
+    try {
+      const response = await axios.delete(
+        "/api/user/history/all",
+        customHeader
+      );
+      setHistory(response.data.history);
+      console.log(response.data.history);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  console.log(history);
+
   return (
     <HistoryContext.Provider
-      value={{ history, addToHistory, removeFromHistory }}
+      value={{ history, addToHistory, removeFromHistory, removeHistoryAll }}
     >
       {children}
     </HistoryContext.Provider>

@@ -15,7 +15,8 @@ import { Link } from "react-router-dom";
 const VideoCard = ({ videos }) => {
   const [toggle, setToggle] = useState(false);
   const [togglePlaylistModal, setTogglePlaylistModal] = useState(false);
-  const { addToHistory, history, removeFromHistory } = useHistory();
+  const { addToHistory, history, removeFromHistory, removeHistoryAll } =
+    useHistory();
   const { likes, addToLiked, removeFromLiked } = useLikedContext();
   const { watchLater, addToWatchLater, removeFromWatchLater } = useWatchLater();
 
@@ -52,11 +53,6 @@ const VideoCard = ({ videos }) => {
               ) : (
                 <li onClick={() => addToLiked(videos)}>
                   <FavoriteIcon sx={{ fontSize: "1rem" }} /> LIKE
-                </li>
-              )}
-              {history.find((x) => x._id === videos._id) && (
-                <li onClick={() => removeFromHistory(videos._id)}>
-                  <FavoriteIcon sx={{ fontSize: "1rem" }} /> Remove From History
                 </li>
               )}
             </ul>

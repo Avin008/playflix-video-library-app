@@ -8,6 +8,7 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import WatchLaterIcon from "@mui/icons-material/WatchLater";
 import PlaylistAddIcon from "@mui/icons-material/PlaylistAdd";
 import FavoriteIcon from "@mui/icons-material/Favorite";
+import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 
 export {
   DehazeIcon,
@@ -20,4 +21,5 @@ export {
   WatchLaterIcon,
   MoreVertIcon,
   PlaylistAddIcon,
+  RemoveCircleIcon,
 };
