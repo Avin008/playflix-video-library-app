@@ -5,5 +5,17 @@ import History from "./history/History";
 import Liked from "./Liked/Liked";
 import WatchLater from "./watch-later/WatchLater";
 import SingleVideoPage from "./single-video-page/SingleVideoPage";
+import Playlist from "./playlist/Playlist";
+import PlaylistVideoPage from "./playlist-video-page/PlaylistVideoPage";
 
-export { Login, Signup, Home, History, Liked, WatchLater, SingleVideoPage };
+export {
+  Login,
+  Signup,
+  Home,
+  History,
+  Liked,
+  WatchLater,
+  SingleVideoPage,
+  Playlist,
+  PlaylistVideoPage,
+};

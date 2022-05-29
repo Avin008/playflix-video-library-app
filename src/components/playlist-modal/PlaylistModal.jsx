@@ -1,13 +1,14 @@
 import "./playlist-modal.css";
 import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
+import { usePlaylistContext } from "../../context/playlist-context";
 
 const PlaylistModal = ({ data }) => {
   const [input, setInput] = useState("");
   const [error, setError] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
 
-  console.log(data);
+  const { playlist, createPlaylist, addVideoToPlaylist } = usePlaylistContext();
 
   //   function addToPlayList() {
   //     if (!input) {
@@ -46,15 +47,20 @@ const PlaylistModal = ({ data }) => {
             value={input}
           />
           {error && <span style={{ color: "red" }}>{errorMsg}</span>}
-          <button className="card-button">CREATE PLAYLIST</button>
+          <button className="card-button" onClick={() => createPlaylist(input)}>
+            CREATE PLAYLIST
+          </button>
         </div>
         <div className="card-footer">
-          {/* {state.playlist.map((x) => (
+          {playlist.map((x) => (
             <li className="card-playlist-name">
-              <input type="checkbox" />
-              {x.playlistName}
+              <input
+                type="checkbox"
+                onChange={() => addVideoToPlaylist(x._id, data.videos)}
+              />
+              {x.title}
             </li>
-          ))} */}
+          ))}
         </div>
       </div>
     </>

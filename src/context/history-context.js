@@ -17,8 +17,6 @@ const HistoryContextProvider = ({ children }) => {
       (async () => {
         try {
           const response = await axios.get("/api/user/history", customHeader);
-
-          console.log(response);
           setHistory(response.data.history);
         } catch (error) {
           console.log(error);
@@ -50,7 +48,6 @@ const HistoryContextProvider = ({ children }) => {
         customHeader
       );
       setHistory(response.data.history);
-      console.log(response);
     } catch (error) {
       console.log(error);
     }
@@ -63,13 +60,10 @@ const HistoryContextProvider = ({ children }) => {
         customHeader
       );
       setHistory(response.data.history);
-      console.log(response.data.history);
     } catch (error) {
       console.log(error);
     }
   };
-
-  console.log(history);
 
   return (
     <HistoryContext.Provider
