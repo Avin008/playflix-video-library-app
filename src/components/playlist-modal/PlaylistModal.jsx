@@ -8,28 +8,12 @@ const PlaylistModal = ({ data }) => {
   const [error, setError] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
 
-  const { playlist, createPlaylist, addVideoToPlaylist } = usePlaylistContext();
-
-  //   function addToPlayList() {
-  //     if (!input) {
-  //       setError(true);
-  //       setErrorMsg("please enter playlist name");
-  //     } else if (
-  //       state.playlist.find((x) => {
-  //         if (x.playlistName === input) {
-  //           return true;
-  //         } else {
-  //           return false;
-  //         }
-  //       })
-  //     ) {
-  //       setError(true);
-  //       setErrorMsg("playlist already exist");
-  //     } else {
-  //       setError(false);
-  //       setInput("");
-  //     }
-  //   }
+  const {
+    playlist,
+    createPlaylist,
+    addVideoToPlaylist,
+    removeVideoFromPlaylist,
+  } = usePlaylistContext();
 
   return (
     <>
@@ -56,7 +40,14 @@ const PlaylistModal = ({ data }) => {
             <li className="card-playlist-name">
               <input
                 type="checkbox"
-                onChange={() => addVideoToPlaylist(x._id, data.videos)}
+                onChange={() =>
+                  x.videos.find((x) => x._id === data.videos._id)
+                    ? removeVideoFromPlaylist(x._id, data.videos._id)
+                    : addVideoToPlaylist(x._id, data.videos)
+                }
+                checked={
+                  x.videos.find((x) => x._id === data.videos._id) ? true : false
+                }
               />
               {x.title}
             </li>
