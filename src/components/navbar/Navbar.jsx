@@ -1,14 +1,17 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/auth-context";
+import { useVideoContext } from "../../context/video-context";
 import {
   DehazeIcon,
   SearchOutlinedIcon,
   AccountCircleIcon,
 } from "../../icons/icons";
+import { useState } from "react";
 
 const Navbar = () => {
   const { auth, setAuth } = useAuth();
+  const { videos, setVideos, searchFunc } = useVideoContext();
 
   const logoutFunc = () => {
     localStorage.removeItem("TOKEN");
@@ -29,7 +32,12 @@ const Navbar = () => {
           <span className="brand-name">Browse</span>
         </div>
         <div className="search-bar-container">
-          <input className="search-bar" type="text" placeholder="Search" />
+          <input
+            className="search-bar"
+            type="text"
+            placeholder="Search"
+            onChange={(e) => searchFunc(e.target.value)}
+          />
           <button className="search-btn">
             <SearchOutlinedIcon className="navbar-icons" />
           </button>

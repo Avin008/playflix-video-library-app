@@ -7,6 +7,7 @@ import WatchLater from "./watch-later/WatchLater";
 import SingleVideoPage from "./single-video-page/SingleVideoPage";
 import Playlist from "./playlist/Playlist";
 import PlaylistVideoPage from "./playlist-video-page/PlaylistVideoPage";
+import SharedLayout from "./shared-layout/SharedLayout";
 
 export {
   Login,
@@ -18,4 +19,5 @@ export {
   SingleVideoPage,
   Playlist,
   PlaylistVideoPage,
+  SharedLayout,
 };

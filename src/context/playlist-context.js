@@ -16,7 +16,6 @@ const PlaylistContextProvider = ({ children }) => {
         try {
           const response = await axios.get("/api/user/playlists", customHeader);
           setPlaylist(response.data.playlists);
-          console.log(response);
         } catch (error) {
           console.log(error);
         }

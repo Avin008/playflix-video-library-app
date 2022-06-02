@@ -3,12 +3,12 @@ import { useVideoContext } from "../../context/video-context";
 import "./home.css";
 
 const Home = () => {
-  const { videos } = useVideoContext();
+  const { searchVideos } = useVideoContext();
   return (
     <>
       <div className="main-container">
-        {videos.map((x) => (
-          <VideoCard videos={x} />
+        {searchVideos.map((x) => (
+          <VideoCard videos={x} key={x._id} />
         ))}
       </div>
     </>

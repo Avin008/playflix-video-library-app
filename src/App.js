@@ -1,6 +1,5 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Navbar, Sidebar } from "./components";
 import {
   Login,
   Signup,
@@ -11,16 +10,15 @@ import {
   SingleVideoPage,
   Playlist,
   PlaylistVideoPage,
+  SharedLayout,
 } from "./pages";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <div className="grid-container">
-        <Sidebar />
-        <Routes>
-          <Route path="/" element={<Home />} />
+      <Routes>
+        <Route path="/" element={<SharedLayout />}>
+          <Route index element={<Home />} />
           <Route path="history" element={<History />} />
           <Route path="liked" element={<Liked />} />
           <Route path="watch-later" element={<WatchLater />} />
@@ -29,8 +27,8 @@ function App() {
           <Route path="playlist/:playlistId" element={<PlaylistVideoPage />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
-        </Routes>
-      </div>
+        </Route>
+      </Routes>
     </div>
   );
 }

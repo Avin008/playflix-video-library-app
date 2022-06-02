@@ -15,6 +15,20 @@ const PlaylistModal = ({ data }) => {
     removeVideoFromPlaylist,
   } = usePlaylistContext();
 
+  function checkInput() {
+    if (!input) {
+      setError(true);
+      setErrorMsg("please input playlist name");
+    } else if (playlist.find((x) => x.title === input) ? true : false) {
+      setError(true);
+      setErrorMsg("playlist already exist");
+    } else {
+      setError(false);
+      setErrorMsg("");
+      createPlaylist(input);
+    }
+  }
+
   return (
     <>
       <div className="playlist-box">
@@ -31,7 +45,7 @@ const PlaylistModal = ({ data }) => {
             value={input}
           />
           {error && <span style={{ color: "red" }}>{errorMsg}</span>}
-          <button className="card-button" onClick={() => createPlaylist(input)}>
+          <button className="card-button" onClick={() => checkInput()}>
             CREATE PLAYLIST
           </button>
         </div>
