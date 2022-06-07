@@ -7,11 +7,10 @@ import {
   SearchOutlinedIcon,
   AccountCircleIcon,
 } from "../../icons/icons";
-import { useState } from "react";
 
 const Navbar = () => {
   const { auth, setAuth } = useAuth();
-  const { videos, setVideos, searchFunc } = useVideoContext();
+  const { searchFunc, setSearchKey } = useVideoContext();
 
   const logoutFunc = () => {
     localStorage.removeItem("TOKEN");
@@ -36,7 +35,10 @@ const Navbar = () => {
             className="search-bar"
             type="text"
             placeholder="Search"
-            onChange={(e) => searchFunc(e.target.value)}
+            onChange={(e) => {
+              searchFunc(e.target.value);
+              setSearchKey(e.target.value);
+            }}
           />
           <button className="search-btn">
             <SearchOutlinedIcon className="navbar-icons" />

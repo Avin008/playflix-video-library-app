@@ -15,7 +15,7 @@ const SingleVideoPage = () => {
     <div className="main-container single-video-container">
       <div>
         <iframe
-          width="560"
+          width="550"
           height="315"
           src={getVideo.videoLink}
           title="YouTube video player"
@@ -33,7 +33,6 @@ const SingleVideoPage = () => {
         </div>
       </div>
       <div>
-        <h5>Suggested Videos</h5>
         {videos
           .filter((x) => x._id !== videoId)
           .map((x) => (

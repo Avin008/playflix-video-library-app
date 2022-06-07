@@ -15,6 +15,7 @@ export const videos = [
       "https://yt3.ggpht.com/ytc/AKedOLSqLOIYDn9ln7gpnkfJDrb61dPkbqnDWfRLLJGzlw=s88-c-k-c0x00ffffff-no-rj",
     channelName: "Tanay Pratap",
     videoLink: "https://www.youtube.com/embed/6PfYFeJSGjo",
+    category: "Google",
   },
   {
     _id: v4(),
@@ -26,6 +27,7 @@ export const videos = [
 
     channelName: "Backstage Millionare",
     videoLink: "https://www.youtube.com/embed/X-wNHCvnYnk",
+    category: "LIC",
   },
   {
     _id: v4(),
@@ -36,6 +38,7 @@ export const videos = [
       "https://yt3.ggpht.com/OZzWTPxupVWwqEYallo1F5w7NdDmlIbfDFKphfe3lMaw1_LkB3lA6C99UdUjwIJU7EMZnYY23g=s68-c-k-c0x00ffffff-no-rj",
     channelName: "Y Combinator",
     videoLink: "https://www.youtube.com/embed/sM2reZib2RY",
+    category: "faang",
   },
   {
     _id: v4(),
@@ -46,6 +49,7 @@ export const videos = [
       "https://yt3.ggpht.com/ytc/AKedOLRcXLd7qIObOPxYCVxNbBvPTYyK5dAposMpA-EYaQ=s68-c-k-c0x00ffffff-no-rj",
     channelName: "Luke Cutanio",
     videoLink: "https://www.youtube.com/embed/EDIpoyr5XU4",
+    category: "Coding",
   },
   {
     _id: v4(),
@@ -56,5 +60,6 @@ export const videos = [
       "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
     channelName: "Google",
     videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
   },
 ];

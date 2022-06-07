@@ -6,7 +6,7 @@ import HorizontalCard from "./horizontal-card/HorizontalCard";
 import HistoryCard from "./history-card/HistoryCard";
 import PlaylistCard from "./playlist-card/PlaylistCard";
 import PlaylistSingleVideoCard from "./playlist-single-video-card/PlaylistSingleVideoCard";
-
+import Snackbar from "./snackbar/Snackbar";
 export {
   Navbar,
   Sidebar,
@@ -16,4 +16,5 @@ export {
   HistoryCard,
   PlaylistCard,
   PlaylistSingleVideoCard,
+  Snackbar,
 };

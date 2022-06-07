@@ -20,7 +20,7 @@
   right: 0;
   color: var(--color-secondary);
   border-bottom: 1px solid gray;
-  z-index: 2;
+  z-index: 4;
 }
 
 .navbar .brand-container,

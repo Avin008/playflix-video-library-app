@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const HorizontalCard = ({ videos }) => {
   return (
     <>
-      <Link to={`/watch/${videos._id}`}>
+      <Link className="links" to={`/watch/${videos._id}`}>
         <div className="horizontal-card">
           <div className="card-head">
             <img src={videos.thumbnail} alt="" />

@@ -22,8 +22,14 @@
   flex-direction: column;
   justify-content: flex-start;
   gap: 0.6rem;
+  padding: 0.5rem 0;
 }
 
 .horizontal-card small {
   color: #aaa;
+}
+
+.links {
+  text-decoration: none;
+  color: white;
 }

@@ -1,0 +1,24 @@
+.chips {
+  background-color: #383838;
+  height: 25px;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem 1rem;
+  border-radius: 0.9rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.container-x {
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.6rem 0.5rem;
+  background-color: #202020;
+  position: sticky;
+  top: 3.8rem;
+  z-index: 3;
+  border-bottom: 1px solid gray;
+}

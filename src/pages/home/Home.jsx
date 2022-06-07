@@ -1,15 +1,17 @@
-import { VideoCard } from "../../components";
+import { Snackbar, VideoCard } from "../../components";
 import { useVideoContext } from "../../context/video-context";
 import "./home.css";
-
 const Home = () => {
-  const { searchVideos } = useVideoContext();
+  const { searchVideos, videos } = useVideoContext();
   return (
     <>
       <div className="main-container">
-        {searchVideos.map((x) => (
-          <VideoCard videos={x} key={x._id} />
-        ))}
+        <Snackbar category={videos} />
+        <div className="container">
+          {searchVideos.map((x) => (
+            <VideoCard videos={x} key={x._id} />
+          ))}
+        </div>
       </div>
     </>
   );
