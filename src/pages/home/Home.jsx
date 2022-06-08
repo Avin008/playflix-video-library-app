@@ -8,8 +8,8 @@ const Home = () => {
       <div className="main-container">
         <Snackbar category={videos} />
         <div className="container">
-          {searchVideos.map((x) => (
-            <VideoCard videos={x} key={x._id} />
+          {searchVideos.map((video) => (
+            <VideoCard videos={video} key={video._id} />
           ))}
         </div>
       </div>
