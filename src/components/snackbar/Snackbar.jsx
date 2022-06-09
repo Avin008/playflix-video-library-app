@@ -2,7 +2,7 @@ import { useVideoContext } from "../../context/video-context";
 import "./snackbar.css";
 
 const Snackbar = ({ category }) => {
-  const { searchFunc, videos, searchKey, setSearchKey } = useVideoContext();
+  const { searchFunc, searchKey, setSearchKey } = useVideoContext();
 
   return (
     <div className="snackbar-container">
