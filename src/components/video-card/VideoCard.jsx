@@ -87,7 +87,11 @@ const VideoCard = ({ videos }) => {
       <div className="card-body">
         <img className="channel-icon" src={videos.channelIcon} alt="#" />
         <div>
-          <h5>{videos.title}</h5>
+          <h5>
+            {videos.title.length > 40
+              ? `${videos.title.substring(0, 50)}...`
+              : videos.title}
+          </h5>
           <small className="card-sub-heading">{videos.channelName}</small>
         </div>
         <MoreVertIcon

@@ -10,7 +10,11 @@ const HorizontalCard = ({ videos }) => {
             <img src={videos.thumbnail} alt={videos.title} />
           </div>
           <div className="card-body">
-            <h5 className="card-heading">{videos.title}</h5>
+            <h5 className="card-heading">
+              {videos.title.length > 40
+                ? `${videos.title.substring(0, 50)}...`
+                : videos.title}
+            </h5>
             <small className="card-sub-heading">{videos.channelName}</small>
           </div>
         </div>
