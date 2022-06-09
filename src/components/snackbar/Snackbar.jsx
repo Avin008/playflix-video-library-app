@@ -18,6 +18,7 @@ const Snackbar = ({ category }) => {
       </div>
       {category.map((x) => (
         <div
+          key={x._id}
           className="chips"
           onClick={() => {
             searchFunc(x.category);
