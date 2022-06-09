@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../context/auth-context";
 import { useVideoContext } from "../../context/video-context";
 import {
-  DehazeIcon,
   SearchOutlinedIcon,
   AccountCircleIcon,
+  LiveTvIcon,
 } from "../../icons/icons";
 
 const Navbar = () => {
   const { auth, setAuth } = useAuth();
   const { searchFunc, setSearchKey } = useVideoContext();
 
-  const logoutFunc = () => {
+  const logoutUser = () => {
     localStorage.removeItem("TOKEN");
     localStorage.removeItem("USER_INFO");
 
@@ -24,41 +24,39 @@ const Navbar = () => {
   };
 
   return (
-    <>
-      <nav className="navbar">
-        <div className="brand-container">
-          <DehazeIcon className="navbar-icons" />
-          <span className="brand-name">Browse</span>
-        </div>
-        <div className="search-bar-container">
-          <input
-            className="search-bar"
-            type="text"
-            placeholder="Search"
-            onChange={(e) => {
-              searchFunc(e.target.value);
-              setSearchKey(e.target.value);
-            }}
-          />
-          <button className="search-btn">
-            <SearchOutlinedIcon className="navbar-icons" />
-          </button>
-        </div>
-        <div className="navbar-actions">
-          {!auth.loginStatus ? (
-            <Link to="/login">
-              <button className="login-btn">
-                <AccountCircleIcon /> SIGN IN
-              </button>
-            </Link>
-          ) : (
-            <button className="login-btn" onClick={logoutFunc}>
-              <AccountCircleIcon /> LOGOUT
+    <nav className="navbar">
+      <div className="brand-container">
+        <LiveTvIcon />
+        <span className="brand-name">PlayFlix</span>
+      </div>
+      <div className="search-bar-container">
+        <input
+          className="search-bar"
+          type="text"
+          placeholder="Search"
+          onChange={(e) => {
+            searchFunc(e.target.value);
+            setSearchKey(e.target.value);
+          }}
+        />
+        <button className="search-btn">
+          <SearchOutlinedIcon className="navbar-icons" />
+        </button>
+      </div>
+      <div className="navbar-actions">
+        {!auth.loginStatus ? (
+          <Link className="links" to="/login">
+            <button className="login-btn">
+              <AccountCircleIcon /> SIGN IN
             </button>
-          )}
-        </div>
-      </nav>
-    </>
+          </Link>
+        ) : (
+          <button className="login-btn" onClick={logoutUser}>
+            <AccountCircleIcon /> LOGOUT
+          </button>
+        )}
+      </div>
+    </nav>
   );
 };
 

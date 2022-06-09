@@ -82,7 +82,7 @@
   color: var(--color-secondary);
 }
 
-body {
-  background: whitesmoke;
-  background-color: #181818;
+.navbar .brand-container {
+  gap: 0.5rem;
+  align-items: center;
 }

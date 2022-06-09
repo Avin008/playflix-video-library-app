@@ -9,7 +9,7 @@ const PlaylistSingleVideoCard = ({ videos }) => {
 
   return (
     <>
-      <div className="thumbnail-card">
+      <div className="video-card">
         <div className="card-head">
           <Link to={`/watch/${videos.video._id}`}>
             <img
@@ -21,12 +21,12 @@ const PlaylistSingleVideoCard = ({ videos }) => {
           {toggle && (
             <ul className="card-actions">
               <li
+                className="card-action"
                 onClick={() =>
                   removeVideoFromPlaylist(videos.playlistId, videos.video._id)
                 }
               >
-                <RemoveCircleIcon sx={{ fontSize: "1rem" }} /> Remove from
-                playlist
+                <RemoveCircleIcon className="card-icon" /> Remove from playlist
               </li>
             </ul>
           )}
@@ -39,12 +39,12 @@ const PlaylistSingleVideoCard = ({ videos }) => {
           />
           <div>
             <h5>{videos.video.title}</h5>
-            <small style={{ color: "gray", fontWeight: "bold" }}>
+            <small className="card-sub-heading">
               {videos.video.channelName}
             </small>
           </div>
           <MoreVertIcon
-            sx={{ color: "white", fontSize: "1.3rem", cursor: "pointer" }}
+            className="card-options-icon"
             onClick={() => setToggle((prev) => !prev)}
           />
         </div>

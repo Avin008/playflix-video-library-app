@@ -1,5 +1,3 @@
-import "./history-card.css";
-import { PlaylistAddIcon } from "../../icons/icons";
 import { MoreVertIcon, RemoveCircleIcon } from "../../icons/icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -9,33 +7,43 @@ const HistoryCard = ({ videos }) => {
   const [toggle, setToggle] = useState(false);
   const { removeFromHistory } = useHistory();
 
+  const toggleCardActionsMenu = () => setToggle((prev) => !prev);
+
   return (
     <>
-      <div className="thumbnail-card">
+      <div className="video-card">
         <div className="card-head">
           <Link to={`/watch/${videos._id}`}>
-            <img className="thumbnail" src={videos.thumbnail} alt="not found" />
+            <img
+              className="thumbnail"
+              src={videos.thumbnail}
+              alt={videos.title}
+            />
           </Link>
           {toggle && (
             <ul className="card-actions">
-              <li onClick={() => removeFromHistory(videos._id)}>
-                <RemoveCircleIcon sx={{ fontSize: "1rem" }} /> Remove from
-                History
+              <li
+                className="card-action"
+                onClick={() => removeFromHistory(videos._id)}
+              >
+                <RemoveCircleIcon className="card-icon" /> Remove from History
               </li>
             </ul>
           )}
         </div>
         <div className="card-body">
-          <img className="channel-icon" src={videos.channelIcon} alt="#" />
+          <img
+            className="channel-icon"
+            src={videos.channelIcon}
+            alt={videos.channelName}
+          />
           <div>
-            <h5>{videos.title}</h5>
-            <small style={{ color: "gray", fontWeight: "bold" }}>
-              {videos.channelName}
-            </small>
+            <h5 className="card-title">{videos.title}</h5>
+            <small className="card-sub-heading">{videos.channelName}</small>
           </div>
           <MoreVertIcon
-            sx={{ color: "white", fontSize: "1.3rem", cursor: "pointer" }}
-            onClick={() => setToggle((prev) => !prev)}
+            className="card-options-icon"
+            onClick={toggleCardActionsMenu}
           />
         </div>
       </div>

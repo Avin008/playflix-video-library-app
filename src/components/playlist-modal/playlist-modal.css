@@ -58,3 +58,7 @@
 .playlist-box .card-footer {
   padding: 0.4rem;
 }
+
+.playlist-box .error-msg {
+  color: "red";
+}

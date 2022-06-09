@@ -21,15 +21,16 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 0.6rem;
+  gap: 0.3rem;
   padding: 0.5rem 0;
 }
 
-.horizontal-card small {
-  color: #aaa;
+.horizontal-card .card-heading {
+  margin: 0;
+  font-weight: 500;
 }
 
-.links {
-  text-decoration: none;
-  color: white;
+.horizontal-card .card-sub-heading {
+  color: #aaa;
+  font-weight: 500;
 }

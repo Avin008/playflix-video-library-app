@@ -11,6 +11,8 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
+import LiveTvIcon from "@mui/icons-material/LiveTv";
+import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
 
 export {
   DehazeIcon,
@@ -26,4 +28,6 @@ export {
   RemoveCircleIcon,
   ThumbUpIcon,
   LibraryAddIcon,
+  LiveTvIcon,
+  PlaylistPlayIcon,
 };

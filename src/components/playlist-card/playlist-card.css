@@ -31,7 +31,7 @@
 
 .playlist-card .card-body {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
   padding: 0.3rem;
   position: relative;
   color: white;
@@ -46,19 +46,26 @@
   color: white;
   border-radius: 0.2rem;
   border: 1px solid gray;
-  /* top: -3rem; */
   bottom: 20px;
+  right: 5px;
 }
 
-.playlist-card .card-actions li {
-  padding: 0.2rem 1rem;
+.playlist-card .card-action {
+  padding: 0.2rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
-.playlist-card .card-actions li:hover {
+.playlist-card .card-action:hover {
   background-color: #383838;
   cursor: pointer;
 }
 
 .playlist-card .playlist-length {
   margin: 0;
+}
+
+.playlist-card .card-icon {
+  font-size: 1.2rem;
 }

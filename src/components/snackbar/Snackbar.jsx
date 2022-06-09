@@ -5,7 +5,7 @@ const Snackbar = ({ category }) => {
   const { searchFunc, videos, searchKey, setSearchKey } = useVideoContext();
 
   return (
-    <div className="container-x">
+    <div className="snackbar-container">
       <div
         className="chips"
         onClick={() => {

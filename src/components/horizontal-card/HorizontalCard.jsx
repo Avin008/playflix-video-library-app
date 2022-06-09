@@ -7,11 +7,11 @@ const HorizontalCard = ({ videos }) => {
       <Link className="links" to={`/watch/${videos._id}`}>
         <div className="horizontal-card">
           <div className="card-head">
-            <img src={videos.thumbnail} alt="" />
+            <img src={videos.thumbnail} alt={videos.title} />
           </div>
           <div className="card-body">
-            <h5 style={{ margin: "0" }}>{videos.title}</h5>
-            <small>{videos.channelName}</small>
+            <h5 className="card-heading">{videos.title}</h5>
+            <small className="card-sub-heading">{videos.channelName}</small>
           </div>
         </div>
       </Link>

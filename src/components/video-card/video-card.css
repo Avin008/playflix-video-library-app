@@ -98,3 +98,7 @@
 .video-card .card-icon-active {
   color: green;
 }
+
+.video-card .toast {
+  background-color: #202020;
+}
