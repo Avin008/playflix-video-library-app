@@ -23,21 +23,25 @@ const HistoryContextProvider = ({ children }) => {
         }
       })();
     } else {
-      console.log("not logged in");
       setHistory([]);
     }
   }, [auth]);
 
   const addToHistory = async (video) => {
-    try {
-      const response = await axios.post(
-        "/api/user/history",
-        { video },
-        customHeader
-      );
-      setHistory(response.data.history);
-    } catch (error) {
-      console.log(error);
+    const isInHistory = history.find((x) => x._id === video._id) ? true : false;
+    if (isInHistory) {
+      setHistory((prev) => prev);
+    } else {
+      try {
+        const response = await axios.post(
+          "/api/user/history",
+          { video },
+          customHeader
+        );
+        setHistory(response.data.history);
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 
