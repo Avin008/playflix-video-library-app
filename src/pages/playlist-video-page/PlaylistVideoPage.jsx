@@ -5,18 +5,17 @@ const PlaylistVideoPage = () => {
   const { playlistId } = useParams();
   const { playlist } = usePlaylistContext();
 
-  const videos = playlist.find((x) => x._id === playlistId);
+  const playlistObj = playlist.find((x) => x._id === playlistId);
 
   return (
-    <>
-      <div className="main-container">
-        {videos.videos.map((x) => (
-          <PlaylistSingleVideoCard
-            videos={{ video: x, playlistId: videos._id }}
-          />
-        ))}
-      </div>
-    </>
+    <div className="container">
+      {playlistObj.videos.map((x) => (
+        <PlaylistSingleVideoCard
+          key={x._id}
+          videos={{ video: x, playlistId: playlistObj._id }}
+        />
+      ))}
+    </div>
   );
 };
 

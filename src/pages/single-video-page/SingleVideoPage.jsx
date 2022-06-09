@@ -1,18 +1,23 @@
 import "./single-video-page.css";
-import { HorizontalCard } from "../../components";
-import ThumbUpIcon from "@mui/icons-material/ThumbUp";
-import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
-import WatchLaterIcon from "@mui/icons-material/WatchLater";
+import { HorizontalCard, PlaylistModal } from "../../components";
 import { useParams } from "react-router-dom";
 import { useVideoContext } from "../../context/video-context";
-
+import { WatchLaterIcon, ThumbUpIcon, LibraryAddIcon } from "../../icons/icons";
+import { useLikedContext } from "../../context/like-context";
+import { useWatchLater } from "../../context/watch-later-context";
+import { useState } from "react";
 const SingleVideoPage = () => {
   const { videos } = useVideoContext();
   const { videoId } = useParams();
   const getVideo = videos.find((x) => x._id === videoId);
+  const { addToLiked } = useLikedContext();
+  const { addToWatchLater } = useWatchLater();
+  const [toggle, setToggle] = useState(false);
+
+  const togglePlaylist = () => setToggle((prev) => !prev);
 
   return (
-    <div className="main-container single-video-container">
+    <div className="container single-video-container">
       <div>
         <iframe
           width="550"
@@ -25,10 +30,25 @@ const SingleVideoPage = () => {
         ></iframe>{" "}
         <div>
           <h4 style={{ color: "white" }}>{getVideo.title}</h4>
-          <div style={{ color: "white", display: "flex", gap: "1rem" }}>
-            <ThumbUpIcon />
-            <LibraryAddIcon />
-            <WatchLaterIcon />
+          <div className="single-video-actions">
+            <div
+              className="chips single-video-action"
+              onClick={() => addToLiked(getVideo)}
+            >
+              <ThumbUpIcon /> <span>Like</span>
+            </div>
+            <div
+              className="chips single-video-action"
+              onClick={() => setToggle((prev) => !prev)}
+            >
+              <LibraryAddIcon /> <span>Save</span>
+            </div>
+            <div
+              className="chips single-video-action"
+              onClick={() => addToWatchLater(getVideo)}
+            >
+              <WatchLaterIcon /> <span>Watch Later</span>
+            </div>
           </div>
         </div>
       </div>
@@ -36,9 +56,14 @@ const SingleVideoPage = () => {
         {videos
           .filter((x) => x._id !== videoId)
           .map((x) => (
-            <HorizontalCard videos={x} />
+            <HorizontalCard key={x._id} videos={x} />
           ))}
       </div>
+      {toggle && (
+        <PlaylistModal
+          data={{ togglePlaylist: togglePlaylist, videos: getVideo }}
+        />
+      )}
     </div>
   );
 };

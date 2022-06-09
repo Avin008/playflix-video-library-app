@@ -53,7 +53,7 @@ const Login = () => {
 
   return (
     <>
-      <div className="main-container login-container">
+      <div className="container login-container">
         <form onSubmit={loginUser}>
           <div className="saiyan-form">
             <h1 className="form__heading">Login</h1>

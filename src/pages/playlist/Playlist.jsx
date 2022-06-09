@@ -5,13 +5,11 @@ import "./playlist.css";
 const Playlist = () => {
   const { playlist } = usePlaylistContext();
   return (
-    <>
-      <div className="main-container">
-        {playlist.map((x) => (
-          <PlaylistCard videos={x} />
-        ))}
-      </div>
-    </>
+    <div className="container">
+      {playlist.map((video) => (
+        <PlaylistCard key={video._id} videos={video} />
+      ))}
+    </div>
   );
 };
 

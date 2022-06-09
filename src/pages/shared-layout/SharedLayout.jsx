@@ -1,4 +1,3 @@
-import "./shared-layout.css";
 import { Navbar, Sidebar } from "../../components/";
 import { Outlet } from "react-router-dom";
 const SharedLayout = () => {
