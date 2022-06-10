@@ -7,6 +7,7 @@ import HistoryCard from "./history-card/HistoryCard";
 import PlaylistCard from "./playlist-card/PlaylistCard";
 import PlaylistSingleVideoCard from "./playlist-single-video-card/PlaylistSingleVideoCard";
 import Snackbar from "./snackbar/Snackbar";
+import RequiredAuth from "./required-auth/RequiredAuth";
 export {
   Navbar,
   Sidebar,
@@ -17,4 +18,5 @@ export {
   PlaylistCard,
   PlaylistSingleVideoCard,
   Snackbar,
+  RequiredAuth,
 };

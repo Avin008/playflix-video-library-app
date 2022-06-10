@@ -12,11 +12,6 @@ const VideoContextProvider = ({ children }) => {
     const searchVideos = videos.filter((x) =>
       x.title.toLowerCase().includes(searchKey.toLowerCase())
     );
-    // if (searchVideos.length === 0) {
-    //   setSearchVideos(videos);
-    // } else {
-    //   setSearchVideos(searchVideos);
-    // }
 
     if (searchKey === "") {
       setSearchVideos(videos);

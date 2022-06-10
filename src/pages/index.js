@@ -8,6 +8,8 @@ import SingleVideoPage from "./single-video-page/SingleVideoPage";
 import Playlist from "./playlist/Playlist";
 import PlaylistVideoPage from "./playlist-video-page/PlaylistVideoPage";
 import SharedLayout from "./shared-layout/SharedLayout";
+import PageNotFound from "./page-not-found/PageNotFound";
+import GetUserLogged from "./get-user-logged/GetUserLoggedIn";
 
 export {
   Login,
@@ -20,4 +22,6 @@ export {
   Playlist,
   PlaylistVideoPage,
   SharedLayout,
+  PageNotFound,
+  GetUserLogged,
 };

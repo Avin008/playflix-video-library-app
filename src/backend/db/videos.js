@@ -3,11 +3,9 @@
  * You can add videos of your wish with different attributes
  * */
 
-import { v4 } from "uuid";
-
 export const videos = [
   {
-    _id: v4(),
+    _id: "ZXWDJU",
     title:
       "Yuval Noah Harari | 21 Lessons for the 21st Century | Talks at Google",
     thumbnail:
@@ -19,7 +17,7 @@ export const videos = [
     category: "Talks",
   },
   {
-    _id: v4(),
+    _id: "wNHCvnYnk",
     title: "How to manage your mental health | Leon Taylor | TEDxClapham",
     thumbnail:
       "https://i.ytimg.com/vi/rkZl2gsLUp4/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCv2YhIK9sh5IdYQQKL8VQvkO8WUw",
@@ -31,7 +29,7 @@ export const videos = [
     category: "TED Talks",
   },
   {
-    _id: v4(),
+    _id: "WD440CY2Vs0",
     title: "Why we procrastinate by Vik Nithy @ TEDxYouth@TheScotsCollege",
     thumbnail: "https://i.ytimg.com/vi_webp/WD440CY2Vs0/mqdefault.webp",
     channelIcon:
@@ -41,7 +39,7 @@ export const videos = [
     category: "TED ",
   },
   {
-    _id: v4(),
+    _id: "EDIpoyr5XU4",
     title:
       "How JavaScript Works 🔥& Execution Context | Namaste JavaScript Ep.1",
     thumbnail:
@@ -53,7 +51,7 @@ export const videos = [
     category: "JavaScript",
   },
   {
-    _id: v4(),
+    _id: "nMZpLM1A",
     title:
       "How JavaScript Code is executed? ❤️& Call Stack | Namaste JavaScript Ep. 2",
     thumbnail:
@@ -65,7 +63,7 @@ export const videos = [
     category: "JavaScript",
   },
   {
-    _id: v4(),
+    _id: "nMZpLM1Ax",
     title:
       "Hoisting in JavaScript 🔥(variables & functions) | Namaste JavaScript Ep. 3",
     thumbnail:
@@ -77,7 +75,7 @@ export const videos = [
     category: "React",
   },
   {
-    _id: v4(),
+    _id: "nMZpLM1Ay",
     title: "React 18 Fundamentals Crash Course 2022",
     thumbnail:
       "https://i.ytimg.com/vi/jLS0TkAHvRg/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB127T_aM5OC6ny3_vSkhjialrMHg",
@@ -88,7 +86,7 @@ export const videos = [
     category: "React",
   },
   {
-    _id: v4(),
+    _id: "nMZpLM1Aa",
     title: "React Router 6 – Tutorial for Beginners",
     thumbnail:
       "https://i.ytimg.com/vi/59IXY5IDrBA/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDJg0GfLm8L7L9_IbnM3mcm2llPAg",
@@ -99,112 +97,13 @@ export const videos = [
     category: "React",
   },
   {
-    _id: v4(),
+    _id: "nMZpLM1Awe",
     title: "Learn CSS Media Queries by Building 3 Projects - Full Course",
     thumbnail:
       "https://i.ytimg.com/vi/aook54SsfhY/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDIaa_cJ3ka9hBWseznhTXk_ZAQaw",
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLRR2uNiXJiFH-XRmtGgkdICxTuDJxCPJidKFRNCNg=s88-c-k-c0x00ffffff-no-rj",
     channelName: "freeCodeCamp.org",
-    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
-    category: "React",
-  },
-  {
-    _id: v4(),
-    title: "Google I/O ‘22 in Under 12 Minutes",
-    thumbnail:
-      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
-    channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Google",
-    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
-    category: "React",
-  },
-  {
-    _id: v4(),
-    title: "Google I/O ‘22 in Under 12 Minutes",
-    thumbnail:
-      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
-    channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Google",
-    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
-    category: "React",
-  },
-  {
-    _id: v4(),
-    title: "Google I/O ‘22 in Under 12 Minutes",
-    thumbnail:
-      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
-    channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Google",
-    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
-    category: "React",
-  },
-  {
-    _id: v4(),
-    title: "Google I/O ‘22 in Under 12 Minutes",
-    thumbnail:
-      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
-    channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Google",
-    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
-    category: "React",
-  },
-  {
-    _id: v4(),
-    title: "Google I/O ‘22 in Under 12 Minutes",
-    thumbnail:
-      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
-    channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Google",
-    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
-    category: "React",
-  },
-  {
-    _id: v4(),
-    title: "Google I/O ‘22 in Under 12 Minutes",
-    thumbnail:
-      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
-    channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Google",
-    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
-    category: "React",
-  },
-  {
-    _id: v4(),
-    title: "Google I/O ‘22 in Under 12 Minutes",
-    thumbnail:
-      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
-    channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Google",
-    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
-    category: "React",
-  },
-  {
-    _id: v4(),
-    title: "Google I/O ‘22 in Under 12 Minutes",
-    thumbnail:
-      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
-    channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Google",
-    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
-    category: "React",
-  },
-  {
-    _id: v4(),
-    title: "Google I/O ‘22 in Under 12 Minutes",
-    thumbnail:
-      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
-    channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Google",
     videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
     category: "React",
   },

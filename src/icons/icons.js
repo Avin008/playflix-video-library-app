@@ -13,6 +13,7 @@ import ThumbUpIcon from "@mui/icons-material/ThumbUp";
 import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 import LiveTvIcon from "@mui/icons-material/LiveTv";
 import PlaylistPlayIcon from "@mui/icons-material/PlaylistPlay";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
 export {
   DehazeIcon,
@@ -30,4 +31,5 @@ export {
   LibraryAddIcon,
   LiveTvIcon,
   PlaylistPlayIcon,
+  AccountCircleOutlinedIcon,
 };
