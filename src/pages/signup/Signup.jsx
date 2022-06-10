@@ -49,11 +49,13 @@ const Signup = () => {
   return (
     <>
       <div className="main-container form-container">
-        <div className="saiyan-form">
+        <div className="saiyan-form-signup">
           <h1 className="heading">Signup</h1>
 
           <div className="input-group">
-            <label className="label">First Name</label>
+            <label className="label" htmlFor="firstname">
+              First Name
+            </label>
             <input
               className="input"
               type="text"
@@ -65,7 +67,9 @@ const Signup = () => {
                 }))
               }
             />
-            <label className="label">Last Name</label>
+            <label className="label" htmlFor="lastname">
+              Last Name
+            </label>
             <input
               className="input"
               type="text"
@@ -78,7 +82,9 @@ const Signup = () => {
               }
             />
 
-            <label className="label">Email address</label>
+            <label className="label" htmlFor="email">
+              Email address
+            </label>
             <input
               className="input"
               type="email"
@@ -90,7 +96,9 @@ const Signup = () => {
                 }))
               }
             />
-            <label className="label">Password</label>
+            <label className="label" htmlFor="password">
+              Password
+            </label>
             <input
               className="input"
               type="password"

@@ -10,8 +10,8 @@ const SingleVideoPage = () => {
   const { videos } = useVideoContext();
   const { videoId } = useParams();
   const getVideo = videos.find((x) => x._id === videoId);
-  const { addToLiked } = useLikedContext();
-  const { addToWatchLater } = useWatchLater();
+  const { addToLiked, removeFromLiked, likes } = useLikedContext();
+  const { addToWatchLater, removeFromWatchLater, watchLater } = useWatchLater();
   const [toggle, setToggle] = useState(false);
 
   const togglePlaylist = () => setToggle((prev) => !prev);
@@ -22,33 +22,52 @@ const SingleVideoPage = () => {
         <iframe
           width="550"
           height="315"
-          src={getVideo.videoLink}
+          src={`${getVideo.videoLink}?autoplay=1`}
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen="1"
         ></iframe>{" "}
         <div>
           <h4 style={{ color: "white" }}>{getVideo.title}</h4>
           <div className="single-video-actions">
-            <div
-              className="chips single-video-action"
-              onClick={() => addToLiked(getVideo)}
-            >
-              <ThumbUpIcon /> <span>Like</span>
-            </div>
+            {likes.find((x) => x._id === getVideo._id) ? (
+              <div
+                className="chips single-video-action"
+                onClick={() => removeFromLiked(getVideo._id)}
+              >
+                <ThumbUpIcon sx={{ color: "#3EA6FF" }} /> <span>Like</span>
+              </div>
+            ) : (
+              <div
+                className="chips single-video-action"
+                onClick={() => addToLiked(getVideo)}
+              >
+                <ThumbUpIcon /> <span>Like</span>
+              </div>
+            )}
             <div
               className="chips single-video-action"
               onClick={() => setToggle((prev) => !prev)}
             >
               <LibraryAddIcon /> <span>Save</span>
             </div>
-            <div
-              className="chips single-video-action"
-              onClick={() => addToWatchLater(getVideo)}
-            >
-              <WatchLaterIcon /> <span>Watch Later</span>
-            </div>
+            {watchLater.find((x) => x._id === getVideo._id) ? (
+              <div
+                className="chips single-video-action"
+                onClick={() => removeFromWatchLater(getVideo._id)}
+              >
+                <WatchLaterIcon sx={{ color: "#3EA6FF" }} />{" "}
+                <span>Watch Later</span>
+              </div>
+            ) : (
+              <div
+                className="chips single-video-action"
+                onClick={() => addToWatchLater(getVideo)}
+              >
+                <WatchLaterIcon /> <span>Watch Later</span>
+              </div>
+            )}
           </div>
         </div>
       </div>

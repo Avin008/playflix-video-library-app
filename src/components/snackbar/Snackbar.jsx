@@ -4,6 +4,8 @@ import "./snackbar.css";
 const Snackbar = ({ category }) => {
   const { searchFunc, searchKey, setSearchKey } = useVideoContext();
 
+  const categories = [...new Set(category.map((x) => x.category))];
+
   return (
     <div className="snackbar-container">
       <div
@@ -16,17 +18,17 @@ const Snackbar = ({ category }) => {
       >
         All
       </div>
-      {category.map((x) => (
+      {categories.map((x) => (
         <div
-          key={x._id}
+          key={x}
           className="chips"
           onClick={() => {
-            searchFunc(x.category);
-            setSearchKey(x.category);
+            searchFunc(x);
+            setSearchKey(x);
           }}
-          style={{ background: searchKey === x.category ? "green" : "" }}
+          style={{ background: searchKey === x ? "green" : "" }}
         >
-          {x.category}
+          {x}
         </div>
       ))}
     </div>

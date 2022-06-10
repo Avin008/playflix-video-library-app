@@ -12,6 +12,8 @@
   justify-content: center;
   align-items: center;
   color: white;
+  position: relative;
+  left: -5rem;
 }
 
 /* login form */
@@ -45,13 +47,13 @@
   margin-top: 1rem;
 }
 
-.saiyan-form .btn {
+/* .saiyan-form .btn {
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.2rem;
-}
+} */
 
 .saiyan-form .input {
   padding: 0.5rem;

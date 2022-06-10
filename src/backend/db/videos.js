@@ -8,48 +8,194 @@ import { v4 } from "uuid";
 export const videos = [
   {
     _id: v4(),
-    title: "First React App: Introduction to ReactJS library",
+    title:
+      "Yuval Noah Harari | 21 Lessons for the 21st Century | Talks at Google",
     thumbnail:
-      "https://i.ytimg.com/vi/KUJsaM-hAjs/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAkHPqNsxWDJHppWkw5s6dtxh4SSQ",
+      "https://i.ytimg.com/vi/Bw9P_ZXWDJU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAdTmhOgRc7_yovZ_4EQsFrFMVAmw",
     channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLSqLOIYDn9ln7gpnkfJDrb61dPkbqnDWfRLLJGzlw=s88-c-k-c0x00ffffff-no-rj",
-    channelName: "Tanay Pratap",
-    videoLink: "https://www.youtube.com/embed/6PfYFeJSGjo",
-    category: "Google",
+      "https://yt3.ggpht.com/ytc/AKedOLQDTf95gNBGbmSrs0I54WEsOqOw9oddIblPuQnj1w=s88-c-k-c0x00ffffff-no-rj",
+    channelName: "Talks at Google",
+    videoLink: "https://www.youtube.com/embed/Bw9P_ZXWDJU",
+    category: "Talks",
   },
   {
     _id: v4(),
-    title: "How OLA electric revoluation started",
+    title: "How to manage your mental health | Leon Taylor | TEDxClapham",
     thumbnail:
-      "https://i.ytimg.com/vi/X-wNHCvnYnk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBnN2NOEE_VIuimR5SdJjPUZHWDNQ",
+      "https://i.ytimg.com/vi/rkZl2gsLUp4/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCv2YhIK9sh5IdYQQKL8VQvkO8WUw",
     channelIcon:
-      "https://yt3.ggpht.com/QQdpkgefEAqn7BxTvqSLkd9UxIioHoy0Kuk_euUkZ3zJ79hoiIJGY702-XhQCX1H4kHpb7TDWfQ=s68-c-k-c0x00ffffff-no-rj",
+      "https://yt3.ggpht.com/ytc/AKedOLQGnY6McntoY-eWaRDI047FWFqj7pVlw2nBfkwz7w=s88-c-k-c0x00ffffff-no-rj",
 
-    channelName: "Backstage Millionare",
+    channelName: "TEDx Talks",
     videoLink: "https://www.youtube.com/embed/X-wNHCvnYnk",
-    category: "LIC",
+    category: "TED Talks",
   },
   {
     _id: v4(),
-    title: "Why you should leave your faang company",
-    thumbnail:
-      "https://i.ytimg.com/vi/sM2reZib2RY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB9VzE4rNqXT6rXtHcjhb1e4hHpqA",
+    title: "Why we procrastinate by Vik Nithy @ TEDxYouth@TheScotsCollege",
+    thumbnail: "https://i.ytimg.com/vi_webp/WD440CY2Vs0/mqdefault.webp",
     channelIcon:
-      "https://yt3.ggpht.com/OZzWTPxupVWwqEYallo1F5w7NdDmlIbfDFKphfe3lMaw1_LkB3lA6C99UdUjwIJU7EMZnYY23g=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Y Combinator",
-    videoLink: "https://www.youtube.com/embed/sM2reZib2RY",
-    category: "faang",
+      "https://yt3.ggpht.com/ytc/AKedOLQGnY6McntoY-eWaRDI047FWFqj7pVlw2nBfkwz7w=s88-c-k-c0x00ffffff-no-rj",
+    channelName: "TEDx Talks",
+    videoLink: "https://www.youtube.com/embed/WD440CY2Vs0",
+    category: "TED ",
   },
   {
     _id: v4(),
-    title: "LIC IPO ? Looks cheap ! Will I invest?",
+    title:
+      "How JavaScript Works 🔥& Execution Context | Namaste JavaScript Ep.1",
     thumbnail:
-      "https://i.ytimg.com/vi/DqCj6hooUwU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCEOhb4zxWb6V4CmNk6CLYI24juWA",
+      "https://i.ytimg.com/vi/ZvbzSrg0afE/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDUlLcNYk2P3kkgwL3qw_D1rKfTzg",
     channelIcon:
-      "https://yt3.ggpht.com/ytc/AKedOLRcXLd7qIObOPxYCVxNbBvPTYyK5dAposMpA-EYaQ=s68-c-k-c0x00ffffff-no-rj",
-    channelName: "Luke Cutanio",
+      "https://yt3.ggpht.com/ytc/AKedOLR8gqN3fHHNYbehMcsJ49rapBPhJMGPYSrl6YQyNg=s88-c-k-c0x00ffffff-no-rj",
+    channelName: "Akshay Saini",
     videoLink: "https://www.youtube.com/embed/EDIpoyr5XU4",
-    category: "Coding",
+    category: "JavaScript",
+  },
+  {
+    _id: v4(),
+    title:
+      "How JavaScript Code is executed? ❤️& Call Stack | Namaste JavaScript Ep. 2",
+    thumbnail:
+      "https://i.ytimg.com/vi/iLWTnMzWtj4/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBscZCzkV4Y01AdM4UfdfdfcLjDJg",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLR8gqN3fHHNYbehMcsJ49rapBPhJMGPYSrl6YQyNg=s88-c-k-c0x00ffffff-no-rj",
+    channelName: "Akshay Saini",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "JavaScript",
+  },
+  {
+    _id: v4(),
+    title:
+      "Hoisting in JavaScript 🔥(variables & functions) | Namaste JavaScript Ep. 3",
+    thumbnail:
+      "https://i.ytimg.com/vi/Fnlnw8uY6jo/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBjvtyGpD79hn1sdkmRbV-dxlLLOQ",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLR8gqN3fHHNYbehMcsJ49rapBPhJMGPYSrl6YQyNg=s88-c-k-c0x00ffffff-no-rj",
+    channelName: "Akshay Saini",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "React 18 Fundamentals Crash Course 2022",
+    thumbnail:
+      "https://i.ytimg.com/vi/jLS0TkAHvRg/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB127T_aM5OC6ny3_vSkhjialrMHg",
+    channelIcon:
+      "https://yt3.ggpht.com/os7Yw6RimtysXXpc8NrXraci87TjXgZSUQyAezi0D3RrNL3YP5riIwi1-0al4Wz0XwzH6oBu6g=s88-c-k-c0x00ffffff-no-rj",
+    channelName: "Codevolution",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "React Router 6 – Tutorial for Beginners",
+    thumbnail:
+      "https://i.ytimg.com/vi/59IXY5IDrBA/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDJg0GfLm8L7L9_IbnM3mcm2llPAg",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLRR2uNiXJiFH-XRmtGgkdICxTuDJxCPJidKFRNCNg=s88-c-k-c0x00ffffff-no-rj",
+    channelName: "freeCodeCamp.org",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "Learn CSS Media Queries by Building 3 Projects - Full Course",
+    thumbnail:
+      "https://i.ytimg.com/vi/aook54SsfhY/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDIaa_cJ3ka9hBWseznhTXk_ZAQaw",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLRR2uNiXJiFH-XRmtGgkdICxTuDJxCPJidKFRNCNg=s88-c-k-c0x00ffffff-no-rj",
+    channelName: "freeCodeCamp.org",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "Google I/O ‘22 in Under 12 Minutes",
+    thumbnail:
+      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
+    channelName: "Google",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "Google I/O ‘22 in Under 12 Minutes",
+    thumbnail:
+      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
+    channelName: "Google",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "Google I/O ‘22 in Under 12 Minutes",
+    thumbnail:
+      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
+    channelName: "Google",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "Google I/O ‘22 in Under 12 Minutes",
+    thumbnail:
+      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
+    channelName: "Google",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "Google I/O ‘22 in Under 12 Minutes",
+    thumbnail:
+      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
+    channelName: "Google",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "Google I/O ‘22 in Under 12 Minutes",
+    thumbnail:
+      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
+    channelName: "Google",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "Google I/O ‘22 in Under 12 Minutes",
+    thumbnail:
+      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
+    channelName: "Google",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
+  },
+  {
+    _id: v4(),
+    title: "Google I/O ‘22 in Under 12 Minutes",
+    thumbnail:
+      "https://i.ytimg.com/vi/CWTm0ccfZe4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDGoe4OTFw54fZs6YBimoxr2Lqhog",
+    channelIcon:
+      "https://yt3.ggpht.com/ytc/AKedOLR14FbEI5TPYKnDB3-0cbOQ_HmI_gA0oozUtq2xyJM=s68-c-k-c0x00ffffff-no-rj",
+    channelName: "Google",
+    videoLink: "https://www.youtube.com/embed/nP-nMZpLM1A",
+    category: "React",
   },
   {
     _id: v4(),

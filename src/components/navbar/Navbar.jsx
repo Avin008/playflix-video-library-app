@@ -25,10 +25,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="brand-container">
-        <LiveTvIcon />
-        <span className="brand-name">PlayFlix</span>
-      </div>
+      <Link className="links" to="/">
+        <div className="brand-container">
+          <LiveTvIcon />
+          <span className="brand-name">PlayFlix</span>
+        </div>
+      </Link>
       <div className="search-bar-container">
         <input
           className="search-bar"
@@ -40,7 +42,7 @@ const Navbar = () => {
           }}
         />
         <button className="search-btn">
-          <SearchOutlinedIcon className="navbar-icons" />
+          <SearchOutlinedIcon className="search-icon" />
         </button>
       </div>
       <div className="navbar-actions">

@@ -44,10 +44,10 @@ const Login = () => {
   };
 
   const guestLogin = async () => {
-    setLoginInfo((prev) => ({
-      email: "adarshbalika@gmail.com",
-      password: "adarshBalika123",
-    }));
+    setLoginInfo({
+      email: "johndoe@gmail.com",
+      password: "johndoe@123",
+    });
     loginFunc();
   };
 
@@ -59,7 +59,7 @@ const Login = () => {
             <h1 className="form__heading">Login</h1>
 
             <div className="input-group">
-              <label className="login-form__label" for="email">
+              <label className="label" htmlFor="email">
                 Email adresses
               </label>
               <input
@@ -72,7 +72,7 @@ const Login = () => {
                 }
                 value={loginInfo.email}
               />
-              <label className="label" for="password">
+              <label className="label" htmlFor="password">
                 Password
               </label>
               <input

@@ -51,7 +51,7 @@ const PlaylistModal = ({ data }) => {
       </div>
       <div className="card-footer">
         {playlist.map((x) => (
-          <li className="card-playlist-name">
+          <li className="card-playlist-name" key={x._id}>
             <input
               type="checkbox"
               onChange={() =>
