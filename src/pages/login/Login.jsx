@@ -94,19 +94,19 @@ const Login = () => {
                   <label htmlFor="checkbox">Remember me</label>
                 </span>
 
-                <span>
-                  <a href="#">Forgot Password?</a>
-                </span>
+                <Link className="forgot-password-btn" to={"#"}>
+                  Forgot Password?
+                </Link>
               </div>
 
               <div className="actions">
                 <button type="sumbit" className="btn btn--primary">
                   Login
                 </button>
-                <button className="btn btn--primary" onClick={guestLogin}>
+                <button className="btn btn--secondary" onClick={guestLogin}>
                   Login As Guest
                 </button>
-                <Link className="btn btn--secondary" to="/signup">
+                <Link className="btn btn" to="/signup">
                   Create Account
                 </Link>
               </div>

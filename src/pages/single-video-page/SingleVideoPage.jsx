@@ -24,9 +24,9 @@ const SingleVideoPage = () => {
           height="315"
           src={`${getVideo.videoLink}?autoplay=1`}
           title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen="1"
+          frameborder="0"
+          allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
         ></iframe>{" "}
         <div>
           <h4 style={{ color: "white" }}>{getVideo.title}</h4>

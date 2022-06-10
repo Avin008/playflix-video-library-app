@@ -47,13 +47,15 @@
   margin-top: 1rem;
 }
 
-/* .saiyan-form .btn {
+.saiyan-form .btn {
   padding: 0.5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 0.2rem;
-} */
+  cursor: pointer;
+  color: white;
+}
 
 .saiyan-form .input {
   padding: 0.5rem;
@@ -72,11 +74,18 @@
   color: var(--login-form-btn-color);
   font-weight: 600;
   text-decoration: none;
+  border: 1px solid #383838;
 }
 
 .saiyan-form .btn--secondary {
-  background-color: var(--color-white);
+  background-color: transparent;
   color: white;
-  text-decoration: underline;
+  border: 1px solid gray;
+  font-weight: 600;
 }
+
+.saiyan-form .forgot-password-btn {
+  color: white;
+}
+
 /* styles are applying from component library */
