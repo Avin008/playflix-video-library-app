@@ -1,0 +1,21 @@
+import { Link } from "react-router-dom";
+
+const EmptyPage = (props) => {
+  return (
+    <div className="main-container page-not-found-container">
+      <div className="page-not-found">
+        <img
+          className="not-found-img"
+          src="https://www.youtube.com/img/desktop/unavailable/unavailable_video_dark_theme.png"
+          alt="not-found"
+        />
+        <h2 className="not-found-heading">{props.msg}</h2>
+      </div>
+      <Link className="go-home-btn" to="/">
+        GO TO HOME
+      </Link>
+    </div>
+  );
+};
+
+export default EmptyPage;

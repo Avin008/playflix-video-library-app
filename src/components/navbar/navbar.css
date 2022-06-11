@@ -1,0 +1,91 @@
+:root {
+  --color-primary: #202020;
+  --color-secondary: white;
+  --color-gray: gray;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 3.75rem;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--color-primary);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: var(--color-secondary);
+  border-bottom: 1px solid var(--color-gray);
+  z-index: 4;
+}
+
+.navbar .brand-container,
+.navbar-actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navbar .search-bar-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid var(--color-gray);
+  border-radius: 0.6rem;
+}
+
+.navbar .search-bar {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 0;
+  outline: 1px solid transparent;
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary);
+  box-sizing: border-box;
+  border-radius: 0.6rem;
+  background-color: transparent;
+}
+
+.navbar .search-btn {
+  border: 0;
+  background-color: transparent;
+  color: var(--color-secondary);
+}
+
+.navbar .navbar-icons {
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+.navbar .navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .login-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  border: 1px solid var(--color-gray);
+  background: var(--color-primary);
+  padding: 0.4rem 0.6rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  color: var(--color-secondary);
+}
+
+.navbar .brand-container {
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.navbar .search-icon {
+  font-size: 1.8rem;
+}

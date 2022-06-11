@@ -1,0 +1,40 @@
+:root {
+  --color-white: white;
+  --sidebar-bg-color: #202020;
+  --list-items-bg-color: #383838;
+  --active-link: #383838;
+}
+
+.sidebar {
+  border: 0;
+  color: var(--color-white);
+  list-style: none;
+  width: 14rem;
+  padding: 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--sidebar-bg-color);
+  margin: 0;
+  position: sticky;
+  top: 4rem;
+  height: 85vh;
+  z-index: 4;
+}
+
+.list-items {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.list-items:hover {
+  background-color: var(--list-items-bg-color);
+  cursor: pointer;
+}
+
+.active {
+  background-color: var(--active-link);
+}

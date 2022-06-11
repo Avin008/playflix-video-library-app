@@ -3,13 +3,34 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
+import { BrowserRouter } from "react-router-dom";
+import { AuthContextProvider } from "./context/auth-context";
+import { VideoContextProvider } from "./context/video-context";
+import { HistoryContextProvider } from "./context/history-context";
+import { LikedContextProvider } from "./context/like-context";
+import { WatchLaterContextProvider } from "./context/watch-later-context";
+import { PlaylistContextProvider } from "./context/playlist-context";
 
 // Call make Server
 makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <AuthContextProvider>
+        <VideoContextProvider>
+          <HistoryContextProvider>
+            <LikedContextProvider>
+              <WatchLaterContextProvider>
+                <PlaylistContextProvider>
+                  <App />
+                </PlaylistContextProvider>
+              </WatchLaterContextProvider>
+            </LikedContextProvider>
+          </HistoryContextProvider>
+        </VideoContextProvider>
+      </AuthContextProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );

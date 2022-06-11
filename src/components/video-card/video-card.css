@@ -1,0 +1,98 @@
+:root {
+  --color-gray: gray;
+  --color-white: white;
+  --card-actions-bg: #202020;
+  --card-action-hover-bg: #383838;
+  --color-green: green;
+}
+
+.video-card {
+  width: fit-content;
+  height: fit-content;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+}
+
+.video-card .card-head {
+  position: relative;
+}
+
+.video-card .thumbnail {
+  object-fit: contain;
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.video-card .card-actions {
+  border: 1px solid var(--color-gray);
+  color: var(--color-white);
+  padding-inline-start: 0;
+  list-style: none;
+  border-radius: 0.2rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 1;
+  gap: 0.2rem;
+  padding: 0.2rem 0;
+  bottom: -1rem;
+  right: 0.5rem;
+  background-color: var(--card-actions-bg);
+}
+
+.video-card .card-action {
+  padding: 0.1rem 0.8rem;
+  font-size: 0.8rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.3rem 1rem;
+}
+
+.video-card .card-action:hover {
+  background-color: var(--card-action-hover-bg);
+  cursor: pointer;
+}
+
+.video-card .channel-icon {
+  border-radius: 50%;
+  width: 2.2rem;
+}
+
+.video-card .card-body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.video-card h5 {
+  margin: 0;
+  color: var(--color-white);
+}
+
+.video-card .links {
+  text-decoration: none;
+}
+
+.video-card .card-icon {
+  font-size: 1rem;
+}
+
+.card-body .card-sub-heading {
+  color: var(--color-gray);
+  font-weight: bold;
+}
+
+.video-card .card-options-icon {
+  color: var(--color-white);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.video-card .card-icon-active {
+  color: var(--color-green);
+}

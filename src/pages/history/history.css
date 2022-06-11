@@ -1,0 +1,15 @@
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+}
+
+.clear-history-btn {
+  outline: none;
+  padding: 0.5rem 0.8rem;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

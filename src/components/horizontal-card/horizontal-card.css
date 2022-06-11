@@ -1,0 +1,40 @@
+:root {
+  -color-gray: gray;
+}
+
+.horizontal-card {
+  width: 20rem;
+  height: 6.25rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.horizontal-card .card-head {
+  min-width: 50%;
+  height: 100%;
+}
+
+.horizontal-card .card-head img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.horizontal-card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.3rem;
+  padding: 0.5rem 0;
+}
+
+.horizontal-card .card-heading {
+  margin: 0;
+  font-weight: 500;
+}
+
+.horizontal-card .card-sub-heading {
+  color: var(-color-gray);
+  font-weight: 500;
+}
