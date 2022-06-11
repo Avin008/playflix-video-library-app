@@ -13,7 +13,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLQDTf95gNBGbmSrs0I54WEsOqOw9oddIblPuQnj1w=s88-c-k-c0x00ffffff-no-rj",
     channelName: "Talks at Google",
-    videoLink: "https://www.youtube.com/embed/Bw9P_ZXWDJU",
+    videoLink: "https://www.youtube.com/embed/Bw9P_ZXWDJU?autoplay=1",
     category: "TEDx",
   },
   {
@@ -25,7 +25,7 @@ export const videos = [
       "https://yt3.ggpht.com/ytc/AKedOLQGnY6McntoY-eWaRDI047FWFqj7pVlw2nBfkwz7w=s88-c-k-c0x00ffffff-no-rj",
 
     channelName: "TEDx Talks",
-    videoLink: "https://www.youtube.com/embed/rkZl2gsLUp4",
+    videoLink: "https://www.youtube.com/embed/rkZl2gsLUp4?autoplay=1",
     category: "Talks",
   },
   {
@@ -37,7 +37,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLR8gqN3fHHNYbehMcsJ49rapBPhJMGPYSrl6YQyNg=s88-c-k-c0x00ffffff-no-rj",
     channelName: "Akshay Saini",
-    videoLink: "https://www.youtube.com/embed/ZvbzSrg0afE",
+    videoLink: "https://www.youtube.com/embed/ZvbzSrg0afE?autoplay=1",
     category: "JavaScript",
   },
   {
@@ -48,7 +48,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/os7Yw6RimtysXXpc8NrXraci87TjXgZSUQyAezi0D3RrNL3YP5riIwi1-0al4Wz0XwzH6oBu6g=s88-c-k-c0x00ffffff-no-rj",
     channelName: "Codevolution",
-    videoLink: "https://www.youtube.com/embed/jLS0TkAHvRg",
+    videoLink: "https://www.youtube.com/embed/jLS0TkAHvRg?autoplay=1",
     category: "React",
   },
   {
@@ -60,7 +60,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLR8gqN3fHHNYbehMcsJ49rapBPhJMGPYSrl6YQyNg=s88-c-k-c0x00ffffff-no-rj",
     channelName: "Akshay Saini",
-    videoLink: "https://www.youtube.com/embed/iLWTnMzWtj4",
+    videoLink: "https://www.youtube.com/embed/iLWTnMzWtj4?autoplay=1",
     category: "JavaScript",
   },
   {
@@ -70,7 +70,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLQGnY6McntoY-eWaRDI047FWFqj7pVlw2nBfkwz7w=s88-c-k-c0x00ffffff-no-rj",
     channelName: "TEDx Talks",
-    videoLink: "https://www.youtube.com/embed/WD440CY2Vs0",
+    videoLink: "https://www.youtube.com/embed/WD440CY2Vs0?autoplay=1",
     category: "TEDx",
   },
   {
@@ -82,7 +82,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLR8gqN3fHHNYbehMcsJ49rapBPhJMGPYSrl6YQyNg=s88-c-k-c0x00ffffff-no-rj",
     channelName: "Akshay Saini",
-    videoLink: "https://www.youtube.com/embed/Fnlnw8uY6jo",
+    videoLink: "https://www.youtube.com/embed/Fnlnw8uY6jo?autoplay=1",
     category: "JavaScript",
   },
   {
@@ -92,7 +92,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLR4BKPIxSr1RjRYn3rujLiX8U3EPhlXXGsx9cYt=s176-c-k-c0x00ffffff-no-rj-mo",
     channelName: "Colt Steele",
-    videoLink: "https://www.youtube.com/embed/qj20o5UQ3qI",
+    videoLink: "https://www.youtube.com/embed/qj20o5UQ3qI?autoplay=1",
     category: "Css",
   },
   {
@@ -103,7 +103,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLQnvobEXpzHCxB1g-q2aXbRDzSaznFVHo5OdFML=s88-c-k-c0x00ffffff-no-rj",
     channelName: "Tanay Pratap",
-    videoLink: "https://www.youtube.com/embed/KUJsaM-hAjs",
+    videoLink: "https://www.youtube.com/embed/KUJsaM-hAjs?autoplay=1",
     category: "React",
   },
   {
@@ -114,7 +114,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLRR2uNiXJiFH-XRmtGgkdICxTuDJxCPJidKFRNCNg=s88-c-k-c0x00ffffff-no-rj",
     channelName: "freeCodeCamp.org",
-    videoLink: "https://www.youtube.com/embed/bbkBuqC1rU4",
+    videoLink: "https://www.youtube.com/embed/bbkBuqC1rU4?autoplay=1",
     category: "Redux",
   },
   {
@@ -125,7 +125,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLRR2uNiXJiFH-XRmtGgkdICxTuDJxCPJidKFRNCNg=s88-c-k-c0x00ffffff-no-rj",
     channelName: "freeCodeCamp.org",
-    videoLink: "https://www.youtube.com/embed/59IXY5IDrBA",
+    videoLink: "https://www.youtube.com/embed/59IXY5IDrBA?autoplay=1",
     category: "React",
   },
   {
@@ -137,7 +137,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLR8gqN3fHHNYbehMcsJ49rapBPhJMGPYSrl6YQyNg=s88-c-k-c0x00ffffff-no-rj",
     channelName: "Akshay Saini",
-    videoLink: "https://www.youtube.com/embed/Fnlnw8uY6jo",
+    videoLink: "https://www.youtube.com/embed/Fnlnw8uY6jo?autoplay=1",
     category: "JavaScript",
   },
   {
@@ -148,7 +148,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLRR2uNiXJiFH-XRmtGgkdICxTuDJxCPJidKFRNCNg=s88-c-k-c0x00ffffff-no-rj",
     channelName: "freeCodeCamp.org",
-    videoLink: "https://www.youtube.com/embed/aook54SsfhY",
+    videoLink: "https://www.youtube.com/embed/aook54SsfhY?autoplay=1",
     category: "Css",
   },
   {
@@ -159,7 +159,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLR4BKPIxSr1RjRYn3rujLiX8U3EPhlXXGsx9cYt=s176-c-k-c0x00ffffff-no-rj-mo",
     channelName: "Colt Steele",
-    videoLink: "https://www.youtube.com/embed/qZv-rNx0jEA",
+    videoLink: "https://www.youtube.com/embed/qZv-rNx0jEA?autoplay=1",
     category: "Css",
   },
 
@@ -171,7 +171,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLRR2uNiXJiFH-XRmtGgkdICxTuDJxCPJidKFRNCNg=s88-c-k-c0x00ffffff-no-rj",
     channelName: "freeCodeCamp.org",
-    videoLink: "https://www.youtube.com/embed/zrs7u6bdbUw",
+    videoLink: "https://www.youtube.com/embed/zrs7u6bdbUw?autoplay=1",
     category: "Redux",
   },
   {
@@ -182,7 +182,7 @@ export const videos = [
     channelIcon:
       "https://yt3.ggpht.com/ytc/AKedOLR4BKPIxSr1RjRYn3rujLiX8U3EPhlXXGsx9cYt=s176-c-k-c0x00ffffff-no-rj-mo",
     channelName: "Colt Steele",
-    videoLink: "https://www.youtube.com/embed/9zBsdzdE4sM",
+    videoLink: "https://www.youtube.com/embed/9zBsdzdE4sM?autoplay=1",
     category: "Css",
   },
   {
@@ -195,7 +195,7 @@ export const videos = [
       "https://yt3.ggpht.com/ytc/AKedOLQGnY6McntoY-eWaRDI047FWFqj7pVlw2nBfkwz7w=s88-c-k-c0x00ffffff-no-rj",
 
     channelName: "TEDx Talks",
-    videoLink: "https://www.youtube.com/embed/MKlx1DLa9EA",
+    videoLink: "https://www.youtube.com/embed/MKlx1DLa9EA?autoplay=1",
     category: "Talks",
   },
 ];
