@@ -5,18 +5,13 @@
   --login-form-btn-color: white;
 }
 
-/* login form container */
-
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  position: relative;
-  left: -5rem;
+  margin-left: -15rem;
 }
-
-/* login form */
 
 .saiyan-form {
   box-shadow: var(--login-form-shadow);
@@ -87,5 +82,3 @@
 .saiyan-form .forgot-password-btn {
   color: white;
 }
-
-/* styles are applying from component library */

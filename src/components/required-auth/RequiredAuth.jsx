@@ -1,11 +1,11 @@
 import { useAuth } from "../../context/auth-context";
-import { GetUserLogged } from "../../pages";
+import { UserNotLoggedIn } from "../../pages";
 const RequiredAuth = ({ children }) => {
   const { auth } = useAuth();
   if (auth.loginStatus) {
     return children;
   } else {
-    return <GetUserLogged />;
+    return <UserNotLoggedIn />;
   }
 };
 

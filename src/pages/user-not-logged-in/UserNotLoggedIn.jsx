@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import { AccountCircleOutlinedIcon } from "../../icons/icons";
-import "./get-user-logged-in.css";
+import "./user-not-logged-in.css";
 
-const GetUserLogged = () => {
+const UserNotLoggedIn = () => {
   return (
     <div className="main-container page-not-found-container">
       <div className="page-not-found">
@@ -24,4 +24,4 @@ const GetUserLogged = () => {
   );
 };
 
-export default GetUserLogged;
+export default UserNotLoggedIn;

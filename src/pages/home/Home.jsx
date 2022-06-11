@@ -1,5 +1,6 @@
 import { Snackbar, VideoCard } from "../../components";
 import { useVideoContext } from "../../context/video-context";
+
 import "./home.css";
 const Home = () => {
   const { searchVideos, videos } = useVideoContext();

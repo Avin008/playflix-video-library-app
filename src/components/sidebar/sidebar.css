@@ -11,6 +11,7 @@
   position: sticky;
   top: 4rem;
   height: 85vh;
+  z-index: 4;
 }
 
 .list-items {

@@ -14,7 +14,7 @@ export const videos = [
       "https://yt3.ggpht.com/ytc/AKedOLQDTf95gNBGbmSrs0I54WEsOqOw9oddIblPuQnj1w=s88-c-k-c0x00ffffff-no-rj",
     channelName: "Talks at Google",
     videoLink: "https://www.youtube.com/embed/Bw9P_ZXWDJU",
-    category: "Talks",
+    category: "TEDx",
   },
   {
     _id: "wNHCvnYnk",
