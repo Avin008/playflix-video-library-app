@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import { useAuth } from "../../context/auth-context";
+import { toast } from "react-toastify";
 
 const Signup = () => {
   const [signupInfo, setSignupInfo] = useState({
@@ -41,17 +42,23 @@ const Signup = () => {
       });
 
       navigate("/");
+      toast.success("user account created successfully");
     } catch (error) {
-      console.log(error);
+      toast.error(error.response.data.errors[0]);
     }
   };
 
   return (
     <>
       <div className="main-container form-container">
-        <div className="saiyan-form-signup">
+        <form
+          className="saiyan-form-signup"
+          onSubmit={(e) => {
+            e.preventDefault();
+            signupUser();
+          }}
+        >
           <h1 className="heading">Signup</h1>
-
           <div className="input-group">
             <label className="label" htmlFor="firstname">
               First Name
@@ -60,6 +67,7 @@ const Signup = () => {
               className="input"
               type="text"
               placeholder="john"
+              required
               onChange={(e) =>
                 setSignupInfo((prev) => ({
                   ...prev,
@@ -74,6 +82,7 @@ const Signup = () => {
               className="input"
               type="text"
               placeholder="Doe"
+              required
               onChange={(e) =>
                 setSignupInfo((prev) => ({
                   ...prev,
@@ -89,6 +98,7 @@ const Signup = () => {
               className="input"
               type="email"
               placeholder="john@gmail.com"
+              required
               onChange={(e) =>
                 setSignupInfo((prev) => ({
                   ...prev,
@@ -103,6 +113,7 @@ const Signup = () => {
               className="input"
               type="password"
               placeholder="********"
+              required
               onChange={(e) =>
                 setSignupInfo((prev) => ({
                   ...prev,
@@ -112,21 +123,26 @@ const Signup = () => {
             />
             <div className="checkbox">
               <span>
-                <input type="checkbox" name="" id="" />
-                <label>I accepts all Terms & Conditions</label>
+                <input type="checkbox" name="checkbox" id="checkbox" required />
+                <label htmlFor="checkbox">
+                  I accepts all Terms & Conditions
+                </label>
               </span>
             </div>
 
             <div className="actions">
-              <button className="btn btn--primary" onClick={signupUser}>
-                Create New Account
-              </button>
+              <input
+                type="submit"
+                value="Create New Account"
+                className="btn btn--primary"
+              />
+
               <Link className="btn btn--secondary" to="/login">
                 Already have an account
               </Link>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </>
   );

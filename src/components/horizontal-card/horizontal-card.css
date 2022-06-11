@@ -1,6 +1,10 @@
+:root {
+  -color-gray: gray;
+}
+
 .horizontal-card {
-  width: 320px;
-  height: 100px;
+  width: 20rem;
+  height: 6.25rem;
   display: flex;
   gap: 0.5rem;
 }
@@ -31,6 +35,6 @@
 }
 
 .horizontal-card .card-sub-heading {
-  color: #aaa;
+  color: var(-color-gray);
   font-weight: 500;
 }

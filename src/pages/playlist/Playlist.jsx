@@ -1,7 +1,6 @@
 import { PlaylistCard } from "../../components";
 import { usePlaylistContext } from "../../context/playlist-context";
-import EmptyList from "../empty-list/EmptyList";
-import "./playlist.css";
+import EmptyPage from "../empty-page/EmptyPage";
 
 const Playlist = () => {
   const { playlist } = usePlaylistContext();
@@ -14,10 +13,7 @@ const Playlist = () => {
           ))}
         </div>
       ) : (
-        <EmptyList
-          img="https://www.youtube.com/img/desktop/unavailable/unavailable_video_dark_theme.png"
-          msg="empty history"
-        />
+        <EmptyPage msg="There is nothing in playlist" />
       )}
     </>
   );

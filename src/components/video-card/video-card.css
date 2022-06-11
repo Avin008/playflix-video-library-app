@@ -1,3 +1,11 @@
+:root {
+  --color-gray: gray;
+  --color-white: white;
+  --card-actions-bg: #202020;
+  --card-action-hover-bg: #383838;
+  --color-green: green;
+}
+
 .video-card {
   width: fit-content;
   height: fit-content;
@@ -17,11 +25,10 @@
 }
 
 .video-card .card-actions {
-  border: 1px solid gray;
-  color: white;
+  border: 1px solid var(--color-gray);
+  color: var(--color-white);
   padding-inline-start: 0;
   list-style: none;
-  background-color: #202020;
   border-radius: 0.2rem;
   width: fit-content;
   display: flex;
@@ -32,6 +39,7 @@
   padding: 0.2rem 0;
   bottom: -1rem;
   right: 0.5rem;
+  background-color: var(--card-actions-bg);
 }
 
 .video-card .card-action {
@@ -44,7 +52,7 @@
 }
 
 .video-card .card-action:hover {
-  background-color: #383838;
+  background-color: var(--card-action-hover-bg);
   cursor: pointer;
 }
 
@@ -63,17 +71,7 @@
 
 .video-card h5 {
   margin: 0;
-  color: white;
-}
-
-.video-card .card-actions {
-  position: absolute;
-  display: flex;
-  gap: 0.2rem;
-  background-color: #212121;
-  padding: 0.2rem 0;
-  bottom: -1rem;
-  right: 0.5rem;
+  color: var(--color-white);
 }
 
 .video-card .links {
@@ -85,20 +83,16 @@
 }
 
 .card-body .card-sub-heading {
-  color: gray;
+  color: var(--color-gray);
   font-weight: bold;
 }
 
 .video-card .card-options-icon {
-  color: white;
+  color: var(--color-white);
   font-size: 1.3rem;
   cursor: pointer;
 }
 
 .video-card .card-icon-active {
-  color: green;
-}
-
-.video-card .toast {
-  background-color: #202020;
+  color: var(--color-green);
 }

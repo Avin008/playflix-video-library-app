@@ -1,6 +1,6 @@
 import { VideoCard } from "../../components";
 import { useLikedContext } from "../../context/like-context";
-import EmptyList from "../empty-list/EmptyList";
+import EmptyPage from "../empty-page/EmptyPage";
 
 const Liked = () => {
   const { likes } = useLikedContext();
@@ -13,10 +13,7 @@ const Liked = () => {
           ))}
         </div>
       ) : (
-        <EmptyList
-          img="https://www.youtube.com/img/desktop/unavailable/unavailable_video_dark_theme.png"
-          msg="empty history"
-        />
+        <EmptyPage msg="Looks like you didn't like any video" />
       )}
     </>
   );

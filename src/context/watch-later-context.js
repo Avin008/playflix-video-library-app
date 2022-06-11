@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createContext, useContext, useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import { useAuth } from "./auth-context";
 
 const WatchLaterContext = createContext();
@@ -36,6 +37,7 @@ const WatchLaterContextProvider = ({ children }) => {
         customHeader
       );
       setWatchLater(response.data.watchlater);
+      toast.success("Video Added to Watch Later");
     } catch (error) {
       console.log(error);
     }
@@ -48,6 +50,7 @@ const WatchLaterContextProvider = ({ children }) => {
         customHeader
       );
       setWatchLater(response.data.watchlater);
+      toast.success("Video Removed From Watch Later");
     } catch (error) {
       console.log(error);
     }

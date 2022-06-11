@@ -1,3 +1,9 @@
+:root {
+  --color-white: #ffffff;
+  --btn-color: #2694ff;
+  --btn-border: #3ea6ff;
+}
+
 .page-not-found-container {
   display: flex;
   flex-direction: column;
@@ -11,7 +17,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 500px;
+  width: 31.25rem;
 }
 
 .page-not-found-container .not-found-img {
@@ -20,7 +26,7 @@
 }
 
 .page-not-found-container .not-found-heading {
-  color: white;
+  color: var(--color-white);
   margin: 0;
   font-weight: 500;
   font-size: 1.3rem;
@@ -29,8 +35,8 @@
 .page-not-found-container .go-home-btn {
   text-decoration: none;
   padding: 0.4rem 0.8rem;
-  border: 1px solid #3ea6ff;
-  color: #2694ff;
+  border: 1px solid var(--btn-border);
+  color: var(--btn-color);
   font-weight: 500;
   display: flex;
   align-items: center;

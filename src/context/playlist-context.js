@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createContext, useContext, useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import { useAuth } from "./auth-context";
 
 const PlaylistContext = createContext();
@@ -33,6 +34,7 @@ const PlaylistContextProvider = ({ children }) => {
         customHeader
       );
       setPlaylist(response.data.playlists);
+      toast.success(`Playlist has been Created`);
     } catch (error) {
       console.log(error);
     }
@@ -45,6 +47,7 @@ const PlaylistContextProvider = ({ children }) => {
         customHeader
       );
       setPlaylist(response.data.playlists);
+      toast.success(`playlist has been removed`);
     } catch (error) {
       console.log(error);
     }
@@ -66,6 +69,7 @@ const PlaylistContextProvider = ({ children }) => {
           }
         });
       });
+      toast.success("Video Added to Playlist");
     } catch (error) {
       console.log(error);
     }
@@ -86,6 +90,7 @@ const PlaylistContextProvider = ({ children }) => {
           }
         });
       });
+      toast.success("Video Removed from Playlist");
     } catch (error) {
       console.log(error);
     }

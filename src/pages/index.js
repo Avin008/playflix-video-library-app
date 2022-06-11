@@ -10,8 +10,7 @@ import PlaylistVideoPage from "./playlist-video-page/PlaylistVideoPage";
 import SharedLayout from "./shared-layout/SharedLayout";
 import PageNotFound from "./page-not-found/PageNotFound";
 import UserNotLoggedIn from "./user-not-logged-in/UserNotLoggedIn";
-import EmptyList from "./empty-list/EmptyList";
-
+import EmptyPage from "./empty-page/EmptyPage";
 export {
   Login,
   Signup,
@@ -25,5 +24,5 @@ export {
   SharedLayout,
   PageNotFound,
   UserNotLoggedIn,
-  EmptyList,
+  EmptyPage,
 };

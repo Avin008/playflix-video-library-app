@@ -3,9 +3,10 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useAuth } from "../../context/auth-context";
+import { toast } from "react-toastify";
 
 const Login = () => {
-  const { auth, setAuth } = useAuth();
+  const { setAuth } = useAuth();
   const navigate = useNavigate();
   const [loginInfo, setLoginInfo] = useState({ email: "", password: "" });
 
@@ -33,8 +34,9 @@ const Login = () => {
       });
 
       navigate("/");
+      toast.success("user successfully logged in");
     } catch (error) {
-      console.log(error.response);
+      toast.error(error.response.data.errors[0]);
     }
   };
 
@@ -67,6 +69,7 @@ const Login = () => {
                 type="email"
                 name="email"
                 placeholder="john@gmail.com"
+                required
                 onChange={(e) =>
                   setLoginInfo((prev) => ({ ...prev, email: e.target.value }))
                 }
@@ -80,6 +83,7 @@ const Login = () => {
                 type="password"
                 name="password"
                 placeholder="********"
+                required
                 onChange={(e) =>
                   setLoginInfo((prev) => ({
                     ...prev,

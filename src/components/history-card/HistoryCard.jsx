@@ -1,7 +1,7 @@
-import { MoreVertIcon, RemoveCircleIcon } from "../../icons/icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useHistory } from "../../context/history-context";
+import { MoreVertIcon, RemoveCircleIcon } from "../../icons/icons";
 
 const HistoryCard = ({ videos }) => {
   const [toggle, setToggle] = useState(false);

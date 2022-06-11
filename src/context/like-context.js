@@ -1,7 +1,7 @@
 import axios from "axios";
 import { createContext, useContext, useEffect, useState } from "react";
 import { useAuth } from "./auth-context";
-
+import { toast } from "react-toastify";
 const LikedContext = createContext();
 
 const LikedContextProvider = ({ children }) => {
@@ -33,6 +33,7 @@ const LikedContextProvider = ({ children }) => {
         customHeader
       );
       setLikes(response.data.likes);
+      toast.success("Video Added to Liked");
     } catch (error) {
       console.log(error);
     }
@@ -45,6 +46,7 @@ const LikedContextProvider = ({ children }) => {
         customHeader
       );
       setLikes(response.data.likes);
+      toast.success("Video Removed From Liked");
     } catch (error) {
       console.log(error);
     }

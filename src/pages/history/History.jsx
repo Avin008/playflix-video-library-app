@@ -1,6 +1,6 @@
 import { HistoryCard } from "../../components";
 import { useHistory } from "../../context/history-context";
-import EmptyList from "../empty-list/EmptyList";
+import EmptyPage from "../empty-page/EmptyPage";
 import "./history.css";
 const History = () => {
   const { history, removeHistoryAll } = useHistory();
@@ -25,10 +25,7 @@ const History = () => {
           </div>
         </div>
       ) : (
-        <EmptyList
-          img="https://www.youtube.com/img/desktop/unavailable/unavailable_video_dark_theme.png"
-          msg="empty history"
-        />
+        <EmptyPage msg="You didn't watch anything yet" />
       )}
     </>
   );

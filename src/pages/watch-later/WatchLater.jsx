@@ -1,6 +1,6 @@
 import { useWatchLater } from "../../context/watch-later-context";
 import { VideoCard } from "../../components";
-import EmptyList from "../empty-list/EmptyList";
+import EmptyPage from "../empty-page/EmptyPage";
 
 const WatchLater = () => {
   const { watchLater } = useWatchLater();
@@ -13,10 +13,7 @@ const WatchLater = () => {
           ))}
         </div>
       ) : (
-        <EmptyList
-          img="https://www.youtube.com/img/desktop/unavailable/unavailable_video_dark_theme.png"
-          msg="empty history"
-        />
+        <EmptyPage msg="There is nothing in Watch Later" />
       )}
     </>
   );

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { createContext, useContext, useEffect, useState } from "react";
+import { toast } from "react-toastify";
 import { useAuth } from "./auth-context";
 
 const HistoryContext = createContext();
@@ -52,6 +53,7 @@ const HistoryContextProvider = ({ children }) => {
         customHeader
       );
       setHistory(response.data.history);
+      toast.success("Video Removed from History");
     } catch (error) {
       console.log(error);
     }
@@ -64,6 +66,7 @@ const HistoryContextProvider = ({ children }) => {
         customHeader
       );
       setHistory(response.data.history);
+      toast.success("History Cleared");
     } catch (error) {
       console.log(error);
     }

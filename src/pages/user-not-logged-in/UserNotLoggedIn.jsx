@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { AccountCircleOutlinedIcon } from "../../icons/icons";
-import "./user-not-logged-in.css";
 
 const UserNotLoggedIn = () => {
   return (

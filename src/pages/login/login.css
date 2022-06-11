@@ -2,14 +2,17 @@
   --login-form-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --login-form-bg: #202020;
   --login-form-btn-primary-bg: #383838;
-  --login-form-btn-color: white;
+  --login-form-btn-color: #ffffff;
+  --color-white: #ffffff;
+  --color-gray: gray;
+  --btn-primary-border-color: #383838;
 }
 
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--color-white);
   margin-left: -15rem;
 }
 
@@ -49,7 +52,7 @@
   align-items: center;
   border-radius: 0.2rem;
   cursor: pointer;
-  color: white;
+  color: var(--color-white);
 }
 
 .saiyan-form .input {
@@ -69,16 +72,16 @@
   color: var(--login-form-btn-color);
   font-weight: 600;
   text-decoration: none;
-  border: 1px solid #383838;
+  border: 1px solid var(--btn-primary-border-color);
 }
 
 .saiyan-form .btn--secondary {
   background-color: transparent;
-  color: white;
-  border: 1px solid gray;
+  color: var(--color-white);
+  border: 1px solid var(--color-gray);
   font-weight: 600;
 }
 
 .saiyan-form .forgot-password-btn {
-  color: white;
+  color: var(--color-white);
 }
