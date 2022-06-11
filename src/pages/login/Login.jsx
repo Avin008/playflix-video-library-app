@@ -11,32 +11,34 @@ const Login = () => {
   const [loginInfo, setLoginInfo] = useState({ email: "", password: "" });
 
   const loginFunc = async () => {
-    try {
-      const response = await axios.post("/api/auth/login", {
-        email: loginInfo.email,
-        password: loginInfo.password,
-      });
+    if (loginInfo.email && loginInfo.password) {
+      try {
+        const response = await axios.post("/api/auth/login", {
+          email: loginInfo.email,
+          password: loginInfo.password,
+        });
 
-      localStorage.setItem("TOKEN", response.data.encodedToken);
-      localStorage.setItem(
-        "USER_INFO",
-        JSON.stringify({
-          firstName: response.data.foundUser.firstName,
-          lastName: response.data.foundUser.lastName,
-          email: response.data.foundUser.email,
-        })
-      );
+        localStorage.setItem("TOKEN", response.data.encodedToken);
+        localStorage.setItem(
+          "USER_INFO",
+          JSON.stringify({
+            firstName: response.data.foundUser.firstName,
+            lastName: response.data.foundUser.lastName,
+            email: response.data.foundUser.email,
+          })
+        );
 
-      setAuth({
-        loginStatus: true,
-        token: localStorage.getItem("TOKEN"),
-        user: JSON.parse(localStorage.getItem("USER_INFO")),
-      });
+        setAuth({
+          loginStatus: true,
+          token: localStorage.getItem("TOKEN"),
+          user: JSON.parse(localStorage.getItem("USER_INFO")),
+        });
 
-      navigate("/");
-      toast.success("user successfully logged in");
-    } catch (error) {
-      toast.error(error.response.data.errors[0]);
+        navigate("/");
+        toast.success("user successfully logged in");
+      } catch (error) {
+        toast.error(error.response.data.errors[0]);
+      }
     }
   };
 
