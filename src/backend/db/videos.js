@@ -196,6 +196,6 @@ export const videos = [
 
     channelName: "TEDx Talks",
     videoLink: "https://www.youtube.com/embed/MKlx1DLa9EA?autoplay=1",
-    category: "Talks",
+    category: "TEDx",
   },
 ];
